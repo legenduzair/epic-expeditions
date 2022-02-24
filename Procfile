@@ -1,0 +1,1 @@
+web: gunicorn epic_expeditions.wsgi
