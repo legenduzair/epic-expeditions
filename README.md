@@ -55,6 +55,10 @@
   | | | | |
   | Weather Management | Site user | Click on the weather tab on the navbar | I can divert to the page which contains the weather app |
   | Weather Management | Site user | Search for a travel destination(city) in the search bar | I can view full details of the weather for that corresponding travel destination |
+  | | | | |
+  | Administration Access | Site admin | Create, read, update and delete travel reviews posted on my website | I can manage and filter out undesirable travel review content |
+  | Administration Access | Site admin | Create, read, update and delete comments posted on travel reviews | I can manage and filter out undesirable comments |
+
 
 
 
