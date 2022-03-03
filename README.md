@@ -34,6 +34,16 @@
   | Account Registration | Site user | Recover my password if it has been forgotten/stolen/corrupted | I can recover access to my account |
   | | | | |
   | View & Navigate | Site user | View all travel reviews posted by other users | I can browse through all reviews posted by registered users and also select a specific review to read in detail |
+  | View & Navigate | Site user | Search for travel reviews by entering the place of interest on the navbar | I can easily access a review of a specific destination I would like to view |
+  | View & Navigate | Site user | Click on a travel review | I can read the full review which contains more information such as full text, image of the destination and ratings |
+  | View & Navigate | Site user | View the ratings of the travel destinations on their corresponding reviews | I can see which is the most popular destinations to visit |
+  | View & Navigate | Site user | Filter the travel reviews by date (ascending or descending), ratings or alphabetical order | I can select a travel review of a specific destination |
+  | View & Navigate | Site user | View comments made by registered users on reviews | I can read the conversation between different users |
+  | | | | |
+  
+
+  
+
 
 
 
