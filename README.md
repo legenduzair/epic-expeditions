@@ -44,6 +44,14 @@
   | Creating a Review/Review Management | Registered user | Input an image I have personally taken of the destination in my review | Other users can view the uploaded image on my review |
   | Creating a Review/Review Management | Registered user | Input full text into my review | Other users including myself can view my full thoughts of the destination I have visited |
   | Creating a Review/Review Management | Registered user | Input a rating from one to five stars for the destination I have visited in my review | I can rate the place of travel and other users can have the opportunity to view my opinion of the place |
+  | | | | |
+  | Editing a Review/Review Management | Registered user | Edit my travel review/s that I have posted | I can update images uploaded, edit full text of the review or edit the ratings I have given the travel destination |
+  | | | | |
+  | Deleting a Review/Review Management | Registered user | delete any uploaded reviews | I can remove this off the website so other users cannot view it |
+  | | | | |
+  
+
+
 
   
 
