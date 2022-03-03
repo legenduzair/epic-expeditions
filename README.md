@@ -40,6 +40,11 @@
   | View & Navigate | Site user | Filter the travel reviews by date (ascending or descending), ratings or alphabetical order | I can select a travel review of a specific destination |
   | View & Navigate | Site user | View comments made by registered users on reviews | I can read the conversation between different users |
   | | | | |
+  | Creating a Review/Review Management | Registered user | Create a review on a travel destination | My review is posted on the website for others to view and comment on |
+  | Creating a Review/Review Management | Registered user | Input an image I have personally taken of the destination in my review | Other users can view the uploaded image on my review |
+  | Creating a Review/Review Management | Registered user | Input full text into my review | Other users including myself can view my full thoughts of the destination I have visited |
+  | Creating a Review/Review Management | Registered user | Input a rating from one to five stars for the destination I have visited in my review | I can rate the place of travel and other users can have the opportunity to view my opinion of the place |
+
   
 
   
