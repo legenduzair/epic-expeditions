@@ -49,7 +49,9 @@
   | | | | |
   | Deleting a Review/Review Management | Registered user | delete any uploaded reviews | I can remove this off the website so other users cannot view it |
   | | | | |
-  
+  | Comments Management | Registered user | Post a comment on a travel review | Other users can view my comment and engage in a conversation with me |
+  | Comments Management | Registered user | Edit or delete a comment I have posted on a travel review | The comment is updated/removed from the review so that other users cant view it |
+  | Comments Management/Review Management | Registered user | Enter my full name into the author field when creating a review/posting a comment| Other users can see who is posting the relevant content |
 
 
 
