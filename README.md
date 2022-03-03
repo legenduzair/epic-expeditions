@@ -52,6 +52,9 @@
   | Comments Management | Registered user | Post a comment on a travel review | Other users can view my comment and engage in a conversation with me |
   | Comments Management | Registered user | Edit or delete a comment I have posted on a travel review | The comment is updated/removed from the review so that other users cant view it |
   | Comments Management/Review Management | Registered user | Enter my full name into the author field when creating a review/posting a comment| Other users can see who is posting the relevant content |
+  | | | | |
+  | Weather Management | Site user | Click on the weather tab on the navbar | I can divert to the page which contains the weather app |
+  | Weather Management | Site user | Search for a travel destination(city) in the search bar | I can view full details of the weather for that corresponding travel destination |
 
 
 
