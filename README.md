@@ -6,25 +6,24 @@
 
 ### Project Strategy
   
-  1. **Project Goal** 
+**Project Goal** 
   - The goal of this project is to create a platform that allows users to share their experiences of expeditions they have been on around the world and evaluating them. A secondary goal for the project is that users can have the ability to check live weather updates of their favourite expeditions they have been on by searching for a city.
 
-  2. **Target Audience**
+**Target Audience**
   - Users who love to go travelling.
   - Users who love to share their thoughts on places they have visited with others.
   - Users who want to gain an insight of places around the world before they go themselves.
 
 ### Project Scope
 
-  1. **Site Owner Goals**
+**Site Owner Goals**
   - Build a platform that is easy to navigate and has an intuitive user interface.
   - Website developed must be visually appealing on all screen sizes.
   - Build a platform that is user-friendly and is accessible to all.
 
-  2. **Entity Relationship Diagram**
+**Entity Relationship Diagram**
 
-  3. **Agile Methodology - User Stories**
-    
+**Agile Methodology - User Stories**
   - All forms of agile methodology were managed using GitHub Issues through implementing user stories gaining potential perspectives of a target user.
 
   | **User Story Label** | **As a:** | **I can:** | **So that:** |
@@ -61,25 +60,17 @@
   | 1 | Site admin | Create, read, update and delete travel reviews posted on my website | I can manage and filter out undesirable travel review content |
   | 2 | Site admin | Create, read, update and delete comments posted on travel reviews | I can manage and filter out undesirable comments |
 
-
-
-
-  
-
-  
-
-
-
-
 ### Project Structure
+
 
 ### Project Skeleton
 
-  1. **Wireframes**
-
+**Wireframes**
+  - Before initiating the project, I planned the general layout and structure of the main content for each page of the website across various screen sizes; desktop, tablet and mobile. The wireframes below were designed using Balsamiq Wireframes:
+  
 ### Surface Design
 
-  1. **Colour Scheme**
+**Colour Scheme**
 
-  2. **Typography**
+**Typography**
     
