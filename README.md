@@ -27,9 +27,13 @@
     
   - All forms of agile methodology were managed using GitHub Issues through implementing user stories gaining potential perspectives of a target user.
 
-  |                      | **As a**  | **I can**                                                                | **So that**                                                |
-  | -------------------- | --------- | ------------------------------------------------------------------------ | ---------------------------------------------------------- |
+  | **User Story Label** | **As a:** | **I can:** | **So that:** |
+  | ----- | ----- | ----- | ----- |
   | Account Registration | Site user | Register for an account by choosing a username, email address & password | I can have a personal account to post reviews and comments |
+  | Account Registration | Site user | Login and logout | Only I can access my personal account |
+  | Account Registration | Site user | Recover my password if it has been forgotten/stolen/corrupted | I can recover access to my account |
+  | | | | |
+  | View & Navigate | Site user | View all travel reviews posted by other users | I can browse through all reviews posted by registered users and also select a specific review to read in detail |
 
 
 
