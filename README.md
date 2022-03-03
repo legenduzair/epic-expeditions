@@ -7,17 +7,30 @@
 ### Project Strategy
   
   1. **Project Goal** 
-    - The goal of this project is to create a platform that allows users to share their experiences of expeditions they have been on around the world and evaluating them. A secondary goal for the project is that users can have the ability to check live weather updates of their favourite expeditions they have been on by searching for a city.
+  - The goal of this project is to create a platform that allows users to share their experiences of expeditions they have been on around the world and evaluating them. A secondary goal for the project is that users can have the ability to check live weather updates of their favourite expeditions they have been on by searching for a city.
 
   2. **Target Audience**
-    - Users who love to go travelling.
-    - Users who love to share their thoughts on places they have visited with others.
-    - Users who want to gain an insight of places around the world before they go themselves.
+  - Users who love to go travelling.
+  - Users who love to share their thoughts on places they have visited with others.
+  - Users who want to gain an insight of places around the world before they go themselves.
 
 ### Project Scope
 
+  1. **Site Owner Goals**
+  - Build a platform that is easy to navigate and has an intuitive user interface.
+  - Website developed must be visually appealing on all screen sizes.
+  - Build a platform that is user-friendly and is accessible to all.
 
-### User Stories
+  2. **Entity Relationship Diagram**
+
+  3. **Agile Methodology - User Stories**
+    
+  - All forms of agile methodology were managed using GitHub Issues through implementing user stories gaining potential perspectives of a target user.
+
+  |                      | **As a**  | **I can**                                                                | **So that**                                                |
+  | -------------------- | --------- | ------------------------------------------------------------------------ | ---------------------------------------------------------- |
+  | Account Registration | Site user | Register for an account by choosing a username, email address & password | I can have a personal account to post reviews and comments |
+
 
 
 ### Project Structure
