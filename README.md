@@ -65,7 +65,7 @@
 
 ## Project Skeleton
 
-## Wireframes
+### Wireframes
   - Before initiating the project, I planned the general layout and structure of the main content for each page of the website across various screen sizes; desktop, tablet and mobile. The wireframes below were designed using Balsamiq Wireframes:
   
 ## Surface Design
