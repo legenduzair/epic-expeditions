@@ -67,7 +67,14 @@
 
 ### Wireframes
   - Before initiating the project, I planned the general layout and structure of the main content for each page of the website across various screen sizes; desktop, tablet and mobile. The wireframes below were designed using Balsamiq Wireframes:
-  
+    - [Landing Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/landingpage-wf.png)
+    - [Reviews Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/reviewpage-wf.png)
+    - [Full Review Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/fullreview-wf.png)
+    - [Add Review Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/addreview-wf.png)
+    - [Register Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/registerpage-wf.png)
+    - [Login Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/loginpage-wf.png)
+    - [Weather App Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/weatherpage-wf.png)
+    
 ## Surface Design
 
 ### Colour Scheme
