@@ -22,7 +22,8 @@
   - Build a platform that is user-friendly and is accessible to all.
 
 ### Entity Relationship Diagram
-
+  - As this project utilises Django which is a MVT(Model, View & Template) framework, a connection to database tabels or 'Models' is required. An entity relationship diagram was created to visually map out the structure of the databases & models. 
+  
 ### Agile Methodology - User Stories
   - All forms of agile methodology were managed using GitHub Issues through implementing user stories gaining potential perspectives of a target user.
 
@@ -74,7 +75,7 @@
     - [Register Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/registerpage-wf.png)
     - [Login Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/loginpage-wf.png)
     - [Weather App Page](https://github.com/legenduzair/epic-expeditions/blob/main/media/wireframes/weatherpage-wf.png)
-    
+
 ## Surface Design
 
 ### Colour Scheme
