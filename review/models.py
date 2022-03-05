@@ -25,12 +25,12 @@ class TravelReview(models.Model):
     no_of_likes = models.IntegerField(blank=True, null=True, default=0)
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ['-published']
 
-        def __str__(self):
-            return str(self.title)
+    def __str__(self):
+        return str(self.title)
 
-class TravelComments(models.Models):
+class TravelComments(models.Model):
 
     review_post = models.ForeignKey(TravelReview, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
