@@ -29,9 +29,6 @@ class TravelReview(models.Model):
 
         def __str__(self):
             return str(self.title)
-        
-        def creator(self):
-            return self.author
 
 class TravelComments(models.Models):
 
