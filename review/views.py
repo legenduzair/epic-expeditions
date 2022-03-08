@@ -4,10 +4,14 @@ from .models import TravelReview
 
 # Create your views here.
 
-class TravelReviewList(ListView):
+class HomeView(ListView):
     model = TravelReview
-    template_name = #
-    ordering = ['-published']
-    paginate_by = 8
+    template_name = 'home.html'
+
+# class TravelReviewList(ListView):
+#     model = TravelReview
+#     template_name = #
+#     ordering = ['-published']
+#     paginate_by = 8
 
 
