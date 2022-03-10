@@ -12,9 +12,16 @@
             <div class="row">
                 {% for expedition in expeditions %}
                 <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="text-center"> {{ expedition.title }}</h3>
+                    <div class="card border-info mb-3">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">{{ expedition.title }}</h3>
+                            <img src="{{ expedition.travel_image.url }}" alt="" class="card-img rounded-2">
+                            <div class="card-body">
+                                <p class="card-text text-truncate"> {{ expedition.content }}</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
+                            </div>
                         </div>
                     </div>
                 </div>
