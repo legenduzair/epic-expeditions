@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="text-center mt-5 pt-3">
+    <h2> Expedition Reviews </h2>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                {% for expedition in expeditions %}
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="text-center"> {{ expedition.title }}</h3>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

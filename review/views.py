@@ -8,9 +8,19 @@ class HomeView(ListView):
     model = TravelReview
     template_name = 'home.html'
 
+def all_expeditions(request):
+    expeditions = TravelReview.objects.all()
+
+    context = {
+        "expeditions": expeditions,
+    }
+
+    return render(request, 'review_list.html', context)
+
+
 # class TravelReviewList(ListView):
 #     model = TravelReview
-#     template_name = #
+#     template_name = 'review_list.html'
 #     ordering = ['-published']
 #     paginate_by = 8
 
