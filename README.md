@@ -40,6 +40,7 @@
   | 4 | Site user | View the ratings of the travel destinations on their corresponding reviews | I can see which is the most popular destinations to visit |
   | 5 | Site user | Filter the travel reviews by date (ascending or descending), ratings or alphabetical order | I can select a travel review of a specific destination |
   | 6 | Site user | View comments made by registered users on reviews | I can read the conversation between different users |
+  | 7 | Site user | Navigate through different pages | I can view all of the reviews posted on the website |
   | Creating a Review/Review Management | | | |
   | 1 | Registered user | Create a review on a travel destination | My review is posted on the website for others to view and comment on |
   | 2 | Registered user | Input an image I have personally taken of the destination in my review | Other users can view the uploaded image on my review |
