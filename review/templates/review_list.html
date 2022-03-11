@@ -15,12 +15,20 @@
                     <div class="card border-info mb-3">
                         <div class="card-body text-center">
                             <h3 class="card-title">{{ expedition.title }}</h3>
-                            <img src="{{ expedition.travel_image.url }}" alt="" class="card-img rounded-2">
+                            <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top rounded-2">
                             <div class="card-body">
                                 <p class="card-text"> {{ expedition.excerpt }}</p>
                             </div>
+                            <div class="card-body">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
                             <div class="card-footer">
                                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
+                                <p><i class="far fa-heart"></i>{{ expedition.likes }}</p>
                             </div>
                         </div>
                     </div>

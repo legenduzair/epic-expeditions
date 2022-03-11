@@ -21,14 +21,16 @@ class TravelReview(models.Model):
     excerpt = models.TextField(blank=True)
     published = models.DateField(auto_now_add=True)
     ratings = models.IntegerField(choices=RATINGS_CHOICES, default=0)
-    likes = models.ManyToManyField(User, blank=True)
-    no_of_likes = models.IntegerField(blank=True, null=True, default=0)
+    likes = models.ManyToManyField(User, related_name='expedition_like', blank=True)
 
     class Meta:
         ordering = ['-published']
 
     def __str__(self):
         return str(self.title)
+    
+    def no_of_likes(self):
+        self.likes.count()
 
 class TravelComments(models.Model):
 
