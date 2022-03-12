@@ -24,3 +24,14 @@ class TravelReviewList(ListView):
     paginate_by = 8
 
 
+def review_detail(request, id):
+    expedition = TravelReview.objects.get(id=id)
+
+    context = {
+        "expedition": expedition
+    }
+
+    return render(request, 'review_detail.html', context)
+
+
+
