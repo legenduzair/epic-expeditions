@@ -13,6 +13,7 @@
                 {% for expedition in travelreview_list %}
                 <div class="col-md-3">
                     <div class="card border-info mb-3">
+                    <a href="{% url 'review_detail' expedition.id %}" class="text-decoration-none text-capitalize fw-bold text-dark">
                         <div class="card-body text-center">
                             <h3 class="card-title">{{ expedition.title }}</h3>
                             <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top rounded-2">
@@ -31,6 +32,7 @@
                                 <p><i class="far fa-heart"></i>{{ expedition.likes }}</p>
                             </div>
                         </div>
+                    </a>
                     </div>
                 </div>
                 {% endfor %}
