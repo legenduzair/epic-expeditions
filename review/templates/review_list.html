@@ -6,13 +6,13 @@
     <h2> Expedition Reviews </h2>
 </div>
 
-<div class="container">
-    <div class="card">
+<div class="container-fluid col-11">
+    <div>
         <div class="card-body">
             <div class="row">
                 {% for expedition in travelreview_list %}
-                <div class="col-md-3">
-                    <div class="card border-info mb-3">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex">
+                    <div class="card mb-3">
                     <a href="{% url 'review_detail' expedition.id %}" class="text-decoration-none text-capitalize fw-bold text-dark">
                         <div class="card-body text-center">
                             <h3 class="card-title">{{ expedition.title }}</h3>
@@ -27,7 +27,7 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer border-0">
                                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
                                 <p><i class="far fa-heart"></i>{{ expedition.likes }}</p>
                             </div>
