@@ -6,11 +6,11 @@
 <div class="container">
     <div class="card">
         <div class="card-content">
-            <h3 class="text-center">Add Travel Review</h3>
+            <h3 class="text-center">{{ controller }}</h3>
             <form action="" method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <input type="submit" value="Add Review">
+                <input type="submit" value="{{ controller }}">
             </form>
         </div>
     </div>

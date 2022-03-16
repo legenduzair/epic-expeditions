@@ -27,6 +27,7 @@
                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
                 <p class="pt-4"><i class="far fa-heart"></i>{{ expedition.likes.all.count }}</p>
             </div>
+            <a href="{% url 'edit_review' expedition.id %}" class="btn btn-warning">Edit Review</a>
         </div>
     </div>
 

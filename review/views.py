@@ -53,7 +53,7 @@ def add_review(request):
         form = TravelReviewForm()
         messages.error(request, 'Your review has failed to post. Please try again.')
 
-    return render(request, 'add_review.html', {'form': form})
+    return render(request, 'add_review.html', {'form': form, 'controller':'Add Review'})
 
 def edit_review(request, expedition_id):
     expedition = TravelReview.objects.get(pk=expedition_id)
@@ -71,7 +71,7 @@ def edit_review(request, expedition_id):
         
     else:
         form = TravelReviewForm(instance=expedition)
-    return render(request, 'add_review.html', {'form': form})
+    return render(request, 'add_review.html', {'form': form, 'controller':'Edit Review'})
 
 
 
