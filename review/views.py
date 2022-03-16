@@ -55,6 +55,24 @@ def add_review(request):
 
     return render(request, 'add_review.html', {'form': form})
 
+def edit_review(request, expedition_id):
+    expedition = TravelReview.objects.get(pk=expedition_id)
+
+    if request.method == 'POST':
+        form = TravelReviewForm(request.POST, instance=expedition)
+
+        if form.is_valid():
+            form.save()
+            messages.info(request, 'Your review has been updated!')
+            return redirect('review_detail', expedition_id)
+
+        else:
+            messages.error(request, 'Your review was not updated. Please try again.')
+        
+    else:
+        form = TravelReviewForm(instance=expedition)
+    return render(request, 'add_review.html', {'form': form})
+
 
 
 
