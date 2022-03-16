@@ -15,7 +15,7 @@ class TravelReview(models.Model):
 
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="review_posts")
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="review_posts", null=True)
     content = models.TextField()
     travel_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)

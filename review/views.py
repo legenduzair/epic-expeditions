@@ -27,35 +27,35 @@ class TravelReviewList(ListView):
     paginate_by = 8
 
 
-def review_detail(request, id):
-    expedition = TravelReview.objects.get(id=id)
+def review_detail(request, expedition_id):
+    expedition = get_object_or_404(TravelReview, pk=expedition_id)
+    form = TravelReviewForm
 
     context = {
-        "expedition": expedition
+        "expedition": expedition,
+        "form": form,
     }
 
     return render(request, 'review_detail.html', context)
 
 def add_review(request):
 
-    expedition = get_object_or_404(TravelReview, id=expedition_id)
+    # expedition = get_object_or_404(TravelReview, pk=expedition_id)
     if request.method == 'POST':
         review_form = TravelReviewForm(request.POST or None)
 
         if review_form.is_valid():
-            data = form.save(commit=False)
-            data.user = request.user
-            data.expedition = expedition
+            data = review_form.save(commit=False)
             data.save()
             messages.success(request, 'Your review has been posted successfully!')
-            return redirect('review_detail', expedition.id)
-        else:
-            form = TravelReviewForm()
-            messages.error(request, 'Your review has failed to post. Please try again.')
+            return redirect('review_list')
+    else:
+        form = TravelReviewForm()
+        messages.error(request, 'Your review has failed to post. Please try again.')
 
         context = {'form': form}
 
-        return render(request, context)
+        return render(request, 'add_review.html', context)
 
 
 
