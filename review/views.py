@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, render, redirect
+from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.views.generic import ListView
 from .models import TravelReview
@@ -42,20 +42,18 @@ def add_review(request):
 
     # expedition = get_object_or_404(TravelReview, pk=expedition_id)
     if request.method == 'POST':
-        review_form = TravelReviewForm(request.POST or None)
+        form = TravelReviewForm(request.POST or None)
 
-        if review_form.is_valid():
-            data = review_form.save(commit=False)
+        if form.is_valid():
+            data = form.save(commit=False)
             data.save()
             messages.success(request, 'Your review has been posted successfully!')
-            return redirect('review_list')
+            return redirect(reverse('review_list'))
     else:
         form = TravelReviewForm()
         messages.error(request, 'Your review has failed to post. Please try again.')
 
-        context = {'form': form}
-
-        return render(request, 'add_review.html', context)
+    return render(request, 'add_review.html', {'form': form})
 
 
 
