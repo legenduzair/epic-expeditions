@@ -2,7 +2,7 @@ from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.views.generic import ListView
 from .models import TravelReview
-from .forms import TravelReviewForm
+from .forms import TravelReviewForm, TravelCommentsForm
 
 
 # Create your views here.
@@ -28,15 +28,30 @@ class TravelReviewList(ListView):
 
 
 def review_detail(request, expedition_id):
+    template_name = 'review_detail.html'
     expedition = get_object_or_404(TravelReview, pk=expedition_id)
-    form = TravelReviewForm
+    # form = TravelReviewForm()
+    comments = expedition.comments.filter(active=True)
+    new_comment = None
+
+    if request.method == 'POST':
+        comment_form = TravelCommentsForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = expedition
+            new_comment.save()
+    else:
+        comment_form = TravelCommentsForm()
 
     context = {
         "expedition": expedition,
-        "form": form,
+        # "form": form,
+        "comments": comments,
+        "new_comment": new_comment,
+        "comment_form": comment_form,
     }
 
-    return render(request, 'review_detail.html', context)
+    return render(request, template_name, context)
 
 
 def add_review(request):
