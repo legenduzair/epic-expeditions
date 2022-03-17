@@ -30,6 +30,10 @@
                             <div class="card-footer border-0">
                                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
                                 <p class="pt-4"><i class="far fa-heart"></i>{{ expedition.likes.all.count }}</p>
+                                {% with comments.count as total_comments %}
+                                <strong class="text-secondary"><i class="far fa-comments"></i>
+                                {{ total_comments }}</strong>
+                                {% endwith %}
                             </div>
                         </div>
                     </a>
