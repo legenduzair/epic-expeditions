@@ -38,6 +38,7 @@ def review_detail(request, expedition_id):
 
     return render(request, 'review_detail.html', context)
 
+
 def add_review(request):
 
     # expedition = get_object_or_404(TravelReview, pk=expedition_id)
@@ -54,6 +55,7 @@ def add_review(request):
         messages.error(request, 'Your review has failed to post. Please try again.')
 
     return render(request, 'add_review.html', {'form': form, 'controller':'Add Review'})
+
 
 def edit_review(request, expedition_id):
     expedition = TravelReview.objects.get(pk=expedition_id)
@@ -74,5 +76,8 @@ def edit_review(request, expedition_id):
     return render(request, 'add_review.html', {'form': form, 'controller':'Edit Review'})
 
 
+def delete_review(request, expedition_id):
+    expedition = TravelReview.objects.get(pk=expedition_id)
 
-
+    expedition.delete()
+    return redirect(reverse('review_list'))
