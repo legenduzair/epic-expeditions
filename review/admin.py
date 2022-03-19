@@ -15,7 +15,7 @@ class TravelReviewAdmin(SummernoteModelAdmin):
 class TravelCommentsAdmin(admin.ModelAdmin):
 
     list_filter = ('created_on', 'active')
-    list_display = ('review_post', 'name', 'body', 'created_on', 'active')
+    list_display = ('post', 'name', 'body', 'created_on', 'active')
     search_fields = ('name', 'body')
     actions = ['active_comments']
 

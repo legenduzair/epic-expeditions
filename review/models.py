@@ -34,7 +34,7 @@ class TravelReview(models.Model):
 
 class TravelComments(models.Model):
 
-    review_post = models.ForeignKey(TravelReview, on_delete=models.CASCADE, related_name='comments')
+    post = models.ForeignKey(TravelReview, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()

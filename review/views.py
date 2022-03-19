@@ -38,7 +38,7 @@ def review_detail(request, expedition_id):
         comment_form = TravelCommentsForm(data=request.POST)
         if comment_form.is_valid():
             new_comment = comment_form.save(commit=False)
-            new_comment.post = expedition
+            new_comment.expedition = expedition
             new_comment.save()
     else:
         comment_form = TravelCommentsForm()

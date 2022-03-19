@@ -13,4 +13,4 @@ class TravelCommentsForm(forms.ModelForm):
 
     class Meta:
         model = TravelComments
-        fields = ('body',)
+        fields = ('post', 'body',)
