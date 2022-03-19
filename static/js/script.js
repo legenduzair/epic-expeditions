@@ -6,9 +6,54 @@ const five = document.getElementById('fifth')
 
 const form = document.querySelector('.form')
 
+const handleSelect = (selection) => {
+    switch(selection) {
+        case 'first': {
+            one.classList.add('checked')
+            two.classList.remove('checked')
+            three.classList.remove('checked')
+            four.classList.remove('checked')
+            five.classList.remove('checked')
+            return;
+        }
+        case 'second': {
+            one.classList.add('checked')
+            two.classList.add('checked')
+            three.classList.remove('checked')
+            four.classList.remove('checked')
+            five.classList.remove('checked')
+            return;
+        }
+        case 'third': {
+            one.classList.add('checked')
+            two.classList.add('checked')
+            three.classList.add('checked')
+            four.classList.remove('checked')
+            five.classList.remove('checked')
+            return;
+        }
+        case 'fourth': {
+            one.classList.add('checked')
+            two.classList.add('checked')
+            three.classList.add('checked')
+            four.classList.add('checked')
+            five.classList.remove('checked')
+            return;
+        }
+        case 'fifth': {
+            one.classList.add('checked')
+            two.classList.add('checked')
+            three.classList.add('checked')
+            four.classList.add('checked')
+            five.classList.add('checked')
+            return;
+        }
+    }
+};
+
 const arr = [one, two, three, four, five];
 
 arr.forEach(item => item.addEventListener('click', (event) => {
-    console.log(event.target)
-}))
+    handleSelect(event.target.id);
+}));
 
