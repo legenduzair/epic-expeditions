@@ -6,5 +6,9 @@ const five = document.getElementById('fifth')
 
 const form = document.querySelector('.form')
 
-const arr = [one, two, three, four, five]
+const arr = [one, two, three, four, five];
+
+arr.forEach(item => item.addEventListener('click', (event) => {
+    console.log(event.target)
+}))
 
