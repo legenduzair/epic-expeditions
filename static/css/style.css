@@ -53,3 +53,8 @@ p {
 .checked {
     color: #71816d;
 }
+
+.star_rating {
+    margin: 0 auto;
+    width: fit-content;
+}
