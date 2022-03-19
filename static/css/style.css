@@ -43,13 +43,13 @@ p {
     
 }
 
-.checked {
-    color: #71816D;
-}
-
 .card-img-top {
     width: 100%;
     height: 20vw;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.checked {
+    color: #71816d;
 }

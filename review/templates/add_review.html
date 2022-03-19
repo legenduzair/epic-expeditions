@@ -12,6 +12,13 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}
+                <p class="card-text"> Rating:
+                    <span class="fa fa-star star_rating"></span>
+                    <span class="fa fa-star star_rating"></span>
+                    <span class="fa fa-star star_rating"></span>
+                    <span class="fa fa-star star_rating"></span>
+                    <span class="fa fa-star star_rating"></span>
+                </p>
                 <input type="submit" value="{{ controller }}" class="btn btn-info">
             </form>
         </div>
