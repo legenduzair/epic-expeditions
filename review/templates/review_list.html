@@ -22,11 +22,11 @@
                             </div>
                             <div class="card-body">
                                 <p class="card-text"> Rating:
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                                    <span class="fa fa-star {% if expedition.ratings > 0 %} checked {% endif %}"></span>
+                                    <span class="fa fa-star {% if expedition.ratings > 1 %} checked {% endif %}"></span>
+                                    <span class="fa fa-star {% if expedition.ratings > 2 %} checked {% endif %}"></span>
+                                    <span class="fa fa-star {% if expedition.ratings > 3 %} checked {% endif %}"></span>
+                                    <span class="fa fa-star {% if expedition.ratings > 4 %} checked {% endif %}"></span>
                                 </p>
                             </div>
                             <div class="card-footer border-0">

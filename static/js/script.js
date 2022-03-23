@@ -78,5 +78,5 @@ arr.forEach(item => item.addEventListener('click', (event) => {
 arr.forEach(item => item.addEventListener('click', (event) => {
     const val = event.target.id;
     const val_num = getNumericValue(val);
-    form.score.value = val_num;
+    form.ratings.value = val_num;
 }));

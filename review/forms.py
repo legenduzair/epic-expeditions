@@ -7,6 +7,7 @@ class TravelReviewForm(forms.ModelForm):
 
         model = TravelReview
         fields = ('title', 'travel_image', 'excerpt', 'content', 'ratings')
+        widgets = {'ratings': forms.HiddenInput()}
 
 
 class TravelCommentsForm(forms.ModelForm):
