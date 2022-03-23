@@ -9,7 +9,7 @@
     <div class="card">
         <div class="card-body">
             <h3 class="text-center">{{ controller }}</h3>
-            <form method="POST" class="add-review">
+            <form method="POST" class="add-review" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
                 <p class="card-text">

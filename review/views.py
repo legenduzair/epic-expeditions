@@ -58,7 +58,7 @@ def add_review(request):
 
     # expedition = get_object_or_404(TravelReview, pk=expedition_id)
     if request.method == 'POST':
-        form = TravelReviewForm(request.POST or None)
+        form = TravelReviewForm(request.POST, request.FILES or None)
 
         if form.is_valid():
             data = form.save(commit=False)
