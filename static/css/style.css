@@ -58,3 +58,8 @@ p {
     margin: 0 auto;
     width: fit-content;
 }
+
+.my-btn {
+    background-color: inherit !important;
+    border: 0 !important;
+}

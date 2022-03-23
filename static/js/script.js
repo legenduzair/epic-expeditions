@@ -4,7 +4,7 @@ const three = document.getElementById('third')
 const four = document.getElementById('fourth')
 const five = document.getElementById('fifth')
 
-const form = document.querySelector('.form')
+const form = document.querySelector('.add-review')
 
 const handleSelect = (selection) => {
     switch(selection) {
@@ -51,9 +51,32 @@ const handleSelect = (selection) => {
     }
 };
 
+const getNumericValue = (stringValue) => {
+    let numericValue;
+    if (stringValue === 'first') {
+        numericValue = 1;
+    } else if (stringValue === 'second') {
+        numericValue = 2;
+    } else if (stringValue === 'third') {
+        numericValue = 3;
+    } else if (stringValue === 'fourth') {
+        numericValue = 4;
+    } else if (stringValue === 'fifth') {
+        numericValue = 5;
+    } else {
+        numericValue = 0;
+    }
+    return numericValue;
+};
+
 const arr = [one, two, three, four, five];
 
 arr.forEach(item => item.addEventListener('click', (event) => {
     handleSelect(event.target.id);
 }));
 
+arr.forEach(item => item.addEventListener('click', (event) => {
+    const val = event.target.id;
+    const val_num = getNumericValue(val);
+    form.score.value = val_num;
+}));
