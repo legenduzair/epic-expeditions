@@ -30,7 +30,7 @@ class TravelReview(models.Model):
         return str(self.title)
     
     def no_of_likes(self):
-        self.likes.count()
+        return self.likes.count()
 
 class TravelComments(models.Model):
 
