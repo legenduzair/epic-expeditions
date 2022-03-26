@@ -1,6 +1,7 @@
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.views.generic import ListView
+from django.http import HttpResponseRedirect
 from .models import TravelReview
 from .forms import TravelReviewForm, TravelCommentsForm
 
@@ -96,3 +97,12 @@ def delete_review(request, expedition_id):
 
     expedition.delete()
     return redirect(reverse('review_list'))
+
+def TravelPostLike(request, expedition_id):
+    post = get_object_or_404(TravelReview, pk=expedition_id)
+    if post.likes.filter(pk=request.user.id).exists():
+        post.likes.remove(request.user)
+    else:
+        post.likes.add(request.user)
+    
+    return HttpResponseRedirect(reverse(review_detail, args=[expedition_id]))
