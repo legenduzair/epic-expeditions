@@ -67,10 +67,12 @@ p {
 .btn-like {
     color: #71816D;
     border: none;
+    background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #71816D;
+    color: #433A3F;
     border: none;
+    background: transparent;
 }
