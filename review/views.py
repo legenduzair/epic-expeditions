@@ -21,6 +21,7 @@ class HomeView(ListView):
 
 #     return render(request, 'review_list.html', context)
 
+
 class TravelReviewList(ListView):
     model = TravelReview
     template_name = 'review_list.html'
@@ -98,11 +99,13 @@ def delete_review(request, expedition_id):
     expedition.delete()
     return redirect(reverse('review_list'))
 
+
 def TravelPostLike(request, expedition_id):
+    post_id = request.POST.get('review_id')
     post = get_object_or_404(TravelReview, pk=expedition_id)
     if post.likes.filter(pk=request.user.id).exists():
         post.likes.remove(request.user)
     else:
         post.likes.add(request.user)
     
-    return HttpResponseRedirect(reverse(review_detail, args=[expedition_id]))
+    return HttpResponseRedirect(reverse('review_detail', args=[post_id]))

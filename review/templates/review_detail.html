@@ -31,7 +31,11 @@
                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
             </div>
             <div>
-                <p class="pt-4"><i class="far fa-heart"></i>{{ expedition.no_of_likes }}</p>
+                <form action="{% url 'review_like' expedition.id %}" method="POST">
+                    {% csrf_token %}
+                    <button type="submit" name="review_id" value="{{expedition.id}}" class="btn-like"><i class="far fa-heart"></i></button>
+                </form>
+                <strong>{{ expedition.no_of_likes }}</strong>
             </div>
             <div>
                 {% with comments.count as total_comments %}

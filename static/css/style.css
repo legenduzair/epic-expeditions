@@ -63,3 +63,14 @@ p {
     background-color: inherit !important;
     border: 0 !important;
 }
+
+.btn-like {
+    color: #71816D;
+    border: none;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #71816D;
+    border: none;
+}
