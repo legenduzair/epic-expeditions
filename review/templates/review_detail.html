@@ -29,13 +29,16 @@
             </div>
             <div class="card-footer text-center">
                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
-                <p class="pt-4"><i class="far fa-heart"></i>{{ expedition.likes.all.count }}</p>
+            </div>
+            <div>
+                <p class="pt-4"><i class="far fa-heart"></i>{{ expedition.no_of_likes }}</p>
+            </div>
+            <div>
                 {% with comments.count as total_comments %}
-                <strong class="text-secondary"><i class="far fa-comments"></i>
-                
+                <strong class="text-secondary"><i class="far fa-comments"></i>              
                 {{ total_comments }}</strong>
                 {% endwith %}
-            </div>
+            </div>                  
             <a href="{% url 'edit_review' expedition.id %}" class="btn btn-warning">Edit Review</a>
             <a href="{% url 'delete_review' expedition.id %}" class="btn btn-danger">Delete Review</a>
         </div>
