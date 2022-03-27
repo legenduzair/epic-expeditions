@@ -10,7 +10,7 @@
     <div>
         <div class="card-body">
             <div class="row">
-                {% for expedition in travelreview_list %}
+            {% for expedition in travelreview_list %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex">
                     <div class="card mb-3">
                     <a href="{% url 'review_detail' expedition.id %}" class="text-decoration-none text-capitalize fw-bold text-dark">
@@ -43,10 +43,27 @@
                     </a>
                     </div>
                 </div>
-                {% endfor %}
+            {% if forloop.counter|divisibleby:4 %}
+            </div>
+            <div class="row">
+            {% endif %}
+            {% endfor %}
             </div>
         </div>
     </div>
+    {% if is_paginated %}
+    <nav class="custom-pagination" aria-label="Page navigation">
+        <ul class="pagination justify-content-center mt-5">
+            {% if page_obj.has_previous %}
+            <li class="page-item"><a href="?page=1" class="page-link text-white m-2 p-3"> First Page </a></li>
+            <li class="page-item"><a href="?page={{ page_obj.previous_page_number }}" class="page-link text-white m-2 p-3">&laquo; Previous Page </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li  class="page-item"><a href="?page={{ page_obj.next_page_number }}" class="page-link text-white m-2 p-3"> Next Page &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
 </div>
 
 {% endblock content %}

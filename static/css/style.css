@@ -76,3 +76,11 @@ p {
     border: none;
     background: transparent;
 }
+
+.custom-pagination {
+    background-color: transparent;
+}
+
+.pagination .page-item .page-link {
+    background-color: #433A3F;
+}
