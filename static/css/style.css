@@ -84,3 +84,8 @@ p {
 .pagination .page-item .page-link {
     background-color: #433A3F;
 }
+
+.review-content {
+    margin-top: 125px;
+    margin-left: 50px;
+}

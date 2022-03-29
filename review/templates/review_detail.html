@@ -15,9 +15,6 @@
                 <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top rounded-2">
             </div>
 
-            <div class="pb-5">
-                <p>{{ expedition.content }}</p>
-            </div>
             <div class="card-body text-center">
                 <p class="card-text p-2"> Rating:
                 <span class="fa fa-star {% if expedition.ratings > 0 %} checked {% endif %}"></span>
@@ -47,6 +44,12 @@
                 <a href="{% url 'edit_review' expedition.id %}" class="btn btn-warning">Edit Review</a>
                 <a href="{% url 'delete_review' expedition.id %}" class="btn btn-danger">Delete Review</a>
             </div>                 
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="review-content">
+                <h4>Review:</h4>
+                <p>{{ expedition.content }}</p>
+            </div>
         </div>
     </div>
     <div class="row">
