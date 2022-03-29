@@ -52,17 +52,18 @@
     <div class="row">
         <div class="col-md-8 card mb-4 mt-3">
             <div class="card-body">
-                <h3>{{ comments.count }} comments</h3>
+                <h3>Comments:</h3>
                 {% for comment in comments %}
                 <div class="comments p-2">
-                    <p class="font-weight-bold">
+                    <p class="font-weight-bold pt-5">
                         {{ comment.name }}
-                        <span class="font-weight-normal">
-                            {{ comment.created_on }}
-                        </span>
+                         wrote:
                     </p>
                     {{ comment.body | linebreaks }}
                 </div>
+                <span class="font-weight-normal text-muted pl-2">
+                    {{ comment.created_on }}
+                </span>
                 {% endfor %}
             </div>
         </div>
