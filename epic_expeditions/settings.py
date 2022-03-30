@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'review',
-    'members',
 ]
 
 SITE_ID = 1
@@ -77,7 +76,10 @@ ROOT_URLCONF = 'epic_expeditions.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),        
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
