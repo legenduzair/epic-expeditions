@@ -108,5 +108,5 @@ def TravelPostLike(request, expedition_id):
         post.likes.remove(request.user)
     else:
         post.likes.add(request.user)
-    
+   
     return HttpResponseRedirect(reverse('review_detail', args=[post_id]))
