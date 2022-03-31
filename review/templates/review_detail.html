@@ -25,22 +25,38 @@
                 </p>
             </div>
             <div class="card-footer text-center">
-                <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
+                <small class="text-muted">{{ expedition.published }} by: {{ expedition.author}}</small>
             </div>
             <div class="text-center pt-5">
+                {% if user.is_authenticated %}
                 <form action="{% url 'review_like' expedition.id %}" method="POST">
                     {% csrf_token %}
+                    <span class="font-weight-bold pr-2">Like this Review!</span>
                     <button type="submit" name="review_id" value="{{expedition.id}}" class="btn-like"><i class="far fa-heart"></i></button>
-                    <strong>{{ expedition.no_of_likes }}</strong>
+                    <strong>{{ expedition.no_of_likes }} likes</strong>
                 </form>
+                {% else %}
+                <span class="font-weight-bold pr-2">Sign In to Like this Review!</span>
+                <span><i class="far fa-heart"></i></span>
+                <strong>{{ expedition.no_of_likes }} likes</strong>
+                {% endif %}
             </div>
             <div class="text-center pt-3">
+                {% if user.is_authenticated %}
                 {% with comments.count as total_comments %}
+                <span class="font-weight-bold pr-2">Leave a Comment Below!</span>
                 <strong><i class="far fa-comments"></i>              
-                {{ total_comments }}</strong>
+                {{ total_comments }} comments</strong>
                 {% endwith %}
+                {% else %}
+                {% with comments.count as total_comments %}
+                <span class="font-weight-bold pr-2">Sign In to Leave a Comment Below!</span>
+                <strong><i class="far fa-comments"></i>              
+                {{ total_comments }} comments</strong>
+                {% endwith %}
+                {% endif %}
             </div>
-            {% if user.is_authenticated %}
+            {% if user.is_authenticated %}          
             <div class="text-center pt-5">
                 <a href="{% url 'edit_review' expedition.id %}" class="btn btn-warning">Edit Review</a>
                 <a href="{% url 'delete_review' expedition.id %}" class="btn btn-danger">Delete Review</a>
