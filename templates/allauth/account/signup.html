@@ -8,23 +8,23 @@
 
 <div class="container-fluid register-image">
   <div class="row">
-    <div class="col-md-8 mt-5 offset-md-3">
-      <h2 class="text-white">{% trans "Register" %}</h2>
-      <p class="text-white">{% blocktrans %}Already have an account? Then please 
-        <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <div class="col-md-8 mt-5 offset-md-3 register-section">
+      <h2 class="text-white text-center">{% trans "Register" %}</h2>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-3">
-      <form class="signup text-white" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    <div class="col-md-8 offset-md-3 register-section text-center">
+      <form class="signup text-white mt-4 register-form" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-      </form>     
+        <button class="btn btn-signup" type="submit">{% trans "Sign Up" %} &raquo;</button>
+      </form>
+      <p class="text-white">{% blocktrans %}Already have an account? Then please 
+        <a class="signin-link" href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>     
     </div>
   </div>
 </div>

@@ -99,16 +99,18 @@ p {
     height: 90vh;   
 }
 
-.login-section {
+.login-section,
+.register-section {
     background-color: rgba(67, 58, 63, 0.6);
     max-width: 40%;
 }
 
-.login-form input {
+.login-form input,
+.register-form input {
     height: 40px;
-    color: #FFFAFA !important;
+    color: #433A3F !important;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.09);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -116,10 +118,16 @@ p {
 }
 
 .login-form a {
-    color: #FFE0BF;
+    color: #5FBFF9;
     font-size: 0.7em;
 }
 
+.login-form p:last-of-type,
+.login-form p label {
+    display: none;
+}
+
+.btn-signin,
 .btn-signup {
     background-color: #FFE0BF !important;
     border: 1px solid #FFE0BF !important;
@@ -128,6 +136,15 @@ p {
     height: 50px;
     font-size: 0.9rem;
 
+}
+
+.signup-link,
+.signin-link {
+    color: #5FBFF9;
+}
+
+.register-form > p > label {
+    display: none;
 }
 
 .register-image {
