@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView
 from django.http import HttpResponseRedirect
 from .models import TravelReview
@@ -57,6 +58,7 @@ def review_detail(request, expedition_id):
     return render(request, template_name, context)
 
 
+@login_required
 def add_review(request):
 
     # expedition = get_object_or_404(TravelReview, pk=expedition_id)
@@ -65,6 +67,7 @@ def add_review(request):
 
         if form.is_valid():
             data = form.save(commit=False)
+            data.author = request.user
             data.save()
             messages.success(request, 'Your review has been posted successfully!')
             return redirect(reverse('review_list'))
