@@ -10,9 +10,13 @@
         <div class="col-md-6 col-lg-4 offset-lg-2">
     
             <h3 class="card-title my-5 text-center">{{ expedition.title }}</h3>  
-                   
+
             <div class="my-5">
                 <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top rounded-2">
+            </div>
+
+            <div class="text-center font-weight-bold">
+                {{ expedition.excerpt }}
             </div>
 
             <div class="card-body text-center">
@@ -76,22 +80,26 @@
         <div class="col-md-8 card mb-4 mt-3">
             <div class="card-body">
                 <h3>Comments:</h3>
-                {% for comment in comments %}
-                <div class="comments p-2">
-                    <p class="font-weight-bold pt-5">
-                        {{ comment.name }}
-                         wrote:
-                    </p>
-                    {{ comment.body | linebreaks }}
-                </div>
-                <span class="font-weight-normal text-muted pl-2">
-                    {{ comment.created_on }}
-                </span>
-                {% endfor %}
+                {% if not expedition.comments.all %}
+                    No Comments Posted Yet...
+                {% else %}
+                    {% for comment in comments %}
+                    <div class="p-2">
+                        <strong class="font-weight-bold"> 
+                            {{ comment.name }} - 
+                            {{ comment.created_on }}
+                        </strong>
+                        <br/>
+                        {{ comment.body }}
+                        <br/><br/>
+                        <hr>
+                    </div>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
         <div class="col-md-8 card mb-4 mt-3">
-            <div class="card-body">
+            <div>
                 {% if new_comment %}
                 <div class="alert alert-success">
                     Your comment is awaiting moderation

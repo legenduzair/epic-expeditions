@@ -18,7 +18,7 @@
                             <h3 class="card-title">{{ expedition.title }}</h3>
                             <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top rounded-2">
                             <div class="card-body">
-                                <p class="card-text"> {{ expedition.excerpt }}</p>
+                                <p class="card-text text-truncate"> {{ expedition.excerpt }}</p>
                             </div>
                             <div class="card-body">
                                 <p class="card-text"> Rating:
@@ -31,13 +31,6 @@
                             </div>
                             <div class="card-footer border-0">
                                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
-                            </div>
-                            <div class="pt-3">                                
-                                <strong><i class="far fa-heart"></i>{{ expedition.no_of_likes }}</strong>
-                                {% with comments.count as total_comments %}
-                                <strong class="pl-5"><i class="far fa-comments"></i>
-                                {{ total_comments }}</strong>
-                                {% endwith %}
                             </div>                       
                         </div>
                     </a>
