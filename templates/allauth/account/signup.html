@@ -21,9 +21,9 @@
 
                 <form class="signup" method="POST" action="{% url 'account_signup' %}">
                   {% csrf_token %}
-                  {% if redirect_field_value %}
+                  <!-- {% if redirect_field_value %}
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-                  {% endif %}
+                  {% endif %} -->
                   <p>Register for an account</p>
 
                   <div class="form-outline mb-4">
