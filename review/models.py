@@ -15,7 +15,7 @@ class TravelReview(models.Model):
 
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     content = models.TextField()
     travel_image = CloudinaryField('image', blank=True, default='https://res.cloudinary.com/legenduzair/image/upload/v1647465863/epic-expeditions/travel-placeholder_nx4cw2.jpg')
     excerpt = models.TextField(blank=True)
