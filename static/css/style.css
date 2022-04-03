@@ -51,7 +51,7 @@ p {
 }
 
 .checked {
-    color: #71816d;
+    color: #5FBFF9;
 }
 
 .star_rating {
@@ -88,6 +88,18 @@ p {
 .review-content {
     margin-top: 125px;
     margin-left: 50px;
+}
+
+.addreview-image {
+    background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1649000966/epic-expeditions/addreview-image_l6a1wg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.addreview-card {
+    background-color: rgba(67, 58, 63, 0.6);
+    color: #FFFAFA;
 }
 
 .login-image {
