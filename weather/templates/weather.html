@@ -14,5 +14,25 @@
             </div>
         </div>
     </form>
+    <div class="container">
+        <div class="row">
+            {% if country_code and temp and pressure and humidity and temp_min and temp_max %}
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <p><span class="badge badge-primary">Country Code: </span> {{ country_code }</p>
+                        <p>
+                            <span class="badge badge-primary">Forecast: </span> {{ main }
+                            <img src="http://openweathermap.org/img/w/{{icon}}.png" alt="Weather Icon" style="width:70px">
+                        </p>
+                        <p><span class="badge badge-primary">Temperature: </span> {{ temp }</p>
+                        <p><span class="badge badge-primary">Pressure: </span> {{ pressure }</p>
+                        <p><span class="badge badge-primary">Humidity: </span> {{ humidity }</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
 </section>
 {% endblock content %}
