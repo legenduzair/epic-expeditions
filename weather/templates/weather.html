@@ -3,4 +3,16 @@
 
 {% block content %}
 
+<section>
+    <h1 class="text-center text-dark mt-5">Search for Live Weather Updates for Your Favourite Cities</h1>
+    <form method="POST" class="col-md">
+        {% csrf_token %}
+        <div class="input-group">
+            <input type="text" class="form-control" name="city" placeholder="Search For a City">
+            <div class="input-group-btn">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </form>
+</section>
 {% endblock content %}
