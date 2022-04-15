@@ -11,11 +11,11 @@ class WeatherView(TemplateView):
     template_name = 'weather.html'
 
 
-def search_city(request):
+def search_weather(request):
     if request.method == 'POST':
         city = request.POST['city']
         source = urllib.request.urlopen('https://api.openweathermap.org/data/2.5/weather?q=' +
-                                        city + '&appid={8cc5e423f92f5911e4369f44a1e605be}&units=metric').read()
+                                        city + '&units=metric&appid=8cc5e423f92f5911e4369f44a1e605be').read()
         list_of_data = json.loads(source)
 
         data = {
