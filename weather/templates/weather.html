@@ -16,18 +16,18 @@
     </form>
     <div class="container">
         <div class="row">
-            {% if country_code and temp and pressure and humidity and temp_min and temp_max %}
+            {% if country_code and temp and pressure and humidity %}
             <div class="col d-flex justify-content-center">
                 <div class="card bg-dark text-white">
                     <div class="card-body">
-                        <p><span class="badge badge-primary">Country Code: </span> {{ country_code }</p>
+                        <p><span class="badge">Country Code: </span>{{ country_code }}</p>
                         <p>
-                            <span class="badge badge-primary">Forecast: </span> {{ main }
+                            <span class="badge">Forecast: </span>{{ main }}
                             <img src="http://openweathermap.org/img/w/{{icon}}.png" alt="Weather Icon" style="width:70px">
                         </p>
-                        <p><span class="badge badge-primary">Temperature: </span> {{ temp }</p>
-                        <p><span class="badge badge-primary">Pressure: </span> {{ pressure }</p>
-                        <p><span class="badge badge-primary">Humidity: </span> {{ humidity }</p>
+                        <p><span class="badge">Temperature: </span>{{ temp }}</p>
+                        <p><span class="badge">Pressure: </span>{{ pressure }}</p>
+                        <p><span class="badge">Humidity: </span>{{ humidity }}</p>
                     </div>
                 </div>
             </div>

@@ -23,8 +23,6 @@ def search_weather(request):
             "temp": str(list_of_data['main']['temp']) + ' °C',
             "pressure": str(list_of_data['main']['pressure']),
             "humidity": str(list_of_data['main']['humidity']),
-            "temp_min": str(list_of_data['main']['temp_min']),
-            "temp_max": str(list_of_data['main']['temp_max']),
             "main": str(list_of_data['weather'][0]['main']),
             "icon": str(list_of_data['weather'][0]['icon']),
         }
