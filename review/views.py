@@ -86,7 +86,7 @@ def edit_review(request, expedition_id):
 
         if form.is_valid():
             form.save()
-            messages.info(request, 'Your review has been updated!')
+            messages.success(request, 'Your review has been updated!')
             return redirect('review_detail', expedition_id)
 
         else:
@@ -101,6 +101,7 @@ def delete_review(request, expedition_id):
     expedition = TravelReview.objects.get(pk=expedition_id)
 
     expedition.delete()
+    messages.success(request, 'Your review has been deleted!')
     return redirect(reverse('review_list'))
 
 
@@ -111,5 +112,6 @@ def TravelPostLike(request, expedition_id):
         post.likes.remove(request.user)
     else:
         post.likes.add(request.user)
+        messages.info(request, 'You have liked this review!')
    
     return HttpResponseRedirect(reverse('review_detail', args=[post_id]))
