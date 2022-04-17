@@ -60,6 +60,20 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ messages.tags }} alert-warning alert-dismissible fade show" id="alert" role="alert">
+                    <strong>{{ message | safe }}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
     {% block content %}
     {% endblock content %}
 
