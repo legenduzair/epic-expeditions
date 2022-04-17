@@ -8,8 +8,8 @@ body {
 }
 
 nav, footer {
-    background: rgb(255,224,181);
-    background: linear-gradient(90deg, rgba(255,224,181,1) 14%, rgba(95,191,249,1) 50%, rgba(255,224,181,1) 86%);
+    background: rgb(67,58,63);
+    background: linear-gradient(90deg, rgba(67,58,63,1) 20%, rgba(95,191,249,1) 50%, rgba(67,58,63,1) 80%);
 }
 
 .navbar-toggler {
