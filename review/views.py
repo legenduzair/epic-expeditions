@@ -13,15 +13,6 @@ class HomeView(ListView):
     model = TravelReview
     template_name = 'home.html'
 
-# def all_expeditions(request):
-#     expeditions = TravelReview.objects.all()
-
-#     context = {
-#         "expeditions": expeditions,
-#     }
-
-#     return render(request, 'review_list.html', context)
-
 
 class TravelReviewList(ListView):
     model = TravelReview
@@ -33,13 +24,13 @@ class TravelReviewList(ListView):
 def review_detail(request, expedition_id):
     template_name = 'review_detail.html'
     expedition = get_object_or_404(TravelReview, pk=expedition_id)
-    # form = TravelReviewForm()
-    comments = expedition.comments.filter(active=True)
+    comments = expedition.comments.order_by("-created_on")
     new_comment = None
 
     if request.method == 'POST':
         comment_form = TravelCommentsForm(data=request.POST)
         if comment_form.is_valid():
+            comment_form.instance.name = request.user.username
             new_comment = comment_form.save(commit=False)
             new_comment.post = expedition
             new_comment.save()
@@ -49,7 +40,6 @@ def review_detail(request, expedition_id):
 
     context = {
         "expedition": expedition,
-        # "form": form,
         "comments": comments,
         "new_comment": new_comment,
         "comment_form": comment_form,
@@ -61,7 +51,6 @@ def review_detail(request, expedition_id):
 @login_required
 def add_review(request):
 
-    # expedition = get_object_or_404(TravelReview, pk=expedition_id)
     if request.method == 'POST':
         form = TravelReviewForm(request.POST, request.FILES or None)
 

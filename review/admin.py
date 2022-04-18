@@ -14,13 +14,10 @@ class TravelReviewAdmin(SummernoteModelAdmin):
 @admin.register(TravelComments)
 class TravelCommentsAdmin(admin.ModelAdmin):
 
-    list_filter = ('created_on', 'active')
-    list_display = ('post', 'name', 'body', 'created_on', 'active')
+    list_filter = ('created_on',)
+    list_display = ('post', 'name', 'body', 'created_on',)
     search_fields = ('name', 'body')
-    actions = ['active_comments']
 
-    def active_comments(self, request, queryset):
-        queryset.update(active=True)
 
 
 
