@@ -26,6 +26,9 @@ def review_detail(request, expedition_id):
     expedition = get_object_or_404(TravelReview, pk=expedition_id)
     comments = expedition.comments.order_by("-created_on")
     new_comment = None
+    liked = False
+    if expedition.likes.filter(pk=request.user.id).exists():
+        liked = True
 
     if request.method == 'POST':
         comment_form = TravelCommentsForm(data=request.POST)
@@ -43,6 +46,7 @@ def review_detail(request, expedition_id):
         "comments": comments,
         "new_comment": new_comment,
         "comment_form": comment_form,
+        "liked": liked
     }
 
     return render(request, template_name, context)

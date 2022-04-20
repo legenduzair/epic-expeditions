@@ -35,9 +35,15 @@
                 {% if user.is_authenticated %}
                 <form action="{% url 'review_like' expedition.id %}" method="POST">
                     {% csrf_token %}
-                    <span class="font-weight-bold pr-2">Like this Review!</span>
-                    <button type="submit" name="review_id" value="{{expedition.id}}" class="btn-like"><i class="far fa-heart"></i></button>
+                    {% if liked %}
+                    <span class="font-weight-bold pr-2">Unlike this Review!</span>
+                    <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like"><i class="fas fa-heart"></i></button>
                     <strong>{{ expedition.no_of_likes }} likes</strong>
+                    {% else %}
+                    <span class="font-weight-bold pr-2">Like this Review!</span>
+                    <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like"><i class="far fa-heart"></i></button>
+                    <strong>{{ expedition.no_of_likes }} likes</strong>
+                    {% endif %}
                 </form>
                 {% else %}
                 <span class="font-weight-bold pr-2">Sign In to Like this Review!</span>
