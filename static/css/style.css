@@ -51,6 +51,18 @@ p {
     border-radius: 10px;
 }
 
+@media (max-width: 575px) {
+    .card-img-top {
+        height: 55vw;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-img-top {
+        height: 40vw;
+    }
+}
+
 .checked {
     color: #5FBFF9;
 }

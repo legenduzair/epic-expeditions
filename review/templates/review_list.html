@@ -2,16 +2,19 @@
 {% load static %}
 
 {% block content %}
-<div class="text-center mt-5 pt-3">
-    <h2> Expedition Reviews </h2>
-</div>
 
 <div class="container-fluid col-11">
+    <div class="row">
+        <div class="col text-center mt-5 mb-3 pt-3">
+            <h2> Expedition Reviews </h2>
+            <hr class="w-50 m-auto">
+        </div>
+    </div>
     <div>
         <div class="card-body">
             <div class="row">
             {% for expedition in travelreview_list %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 d-flex">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                     <div class="card mb-3">
                     <a href="{% url 'review_detail' expedition.id %}" class="text-decoration-none text-capitalize fw-bold text-dark">
                         <div class="card-body text-center">
