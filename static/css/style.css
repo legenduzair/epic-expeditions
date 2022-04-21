@@ -74,6 +74,11 @@ p {
         object-fit: cover;
         border-radius: 10px;
     }
+
+    .review-content {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 991px) {
