@@ -65,6 +65,11 @@ p {
     border: 0 !important;
 }
 
+.btn-submit {
+    background-color: #71816D;
+    color: white;
+}
+
 .btn-like {
     color: #71816D;
     border: none;
