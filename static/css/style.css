@@ -99,6 +99,14 @@ p {
     width: fit-content;
 }
 
+.likes {
+    color: #71816D;
+}
+
+.comments {
+    color: #E56B65;
+}
+
 .my-btn {
     background-color: inherit !important;
     border: 0 !important;

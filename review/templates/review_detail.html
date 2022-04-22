@@ -51,8 +51,8 @@
                     {% endif %}
                 </form>
                 {% else %}
-                <span class="font-weight-bold pr-2">Sign In to Like this Review!</span>
-                <span><i class="far fa-heart"></i></span>
+                <span class="font-weight-bold pr-2"><a href="{% url 'account_login' %}">Sign In</a> to Like this Review!</span>
+                <span><i class="far fa-heart likes"></i></span>
                 <strong>{{ expedition.no_of_likes }} likes</strong>
                 {% endif %}
             </div>
@@ -60,13 +60,13 @@
                 {% if user.is_authenticated %}
                 {% with comments.count as total_comments %}
                 <span class="font-weight-bold pr-2">Leave a Comment Below!</span>
-                <strong><i class="far fa-comments"></i>              
+                <strong><i class="far fa-comments comments"></i>              
                 {{ total_comments }} comments</strong>
                 {% endwith %}
                 {% else %}
                 {% with comments.count as total_comments %}
-                <span class="font-weight-bold pr-2">Sign In to Leave a Comment Below!</span>
-                <strong><i class="far fa-comments"></i>              
+                <span class="font-weight-bold pr-2"><a href="{% url 'account_login' %}">Sign In</a> to Leave a Comment Below!</span>
+                <strong><i class="far fa-comments comments"></i>              
                 {{ total_comments }} comments</strong>
                 {% endwith %}
                 {% endif %}

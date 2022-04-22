@@ -32,6 +32,13 @@
                                     <span class="fa fa-star {% if expedition.ratings > 4 %} checked {% endif %}"></span>
                                 </p>
                             </div>
+                            <div>
+                                <i class="fas fa-heart likes pb-3"></i>
+                                <strong>{{ expedition.no_of_likes }} likes</strong>
+                                <br>
+                                <i class="fas fa-comments comments"></i>              
+                                <strong>{{ expedition.comments.count }} comments</strong>
+                            </div>
                             <div class="card-footer border-0">
                                 <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
                             </div>                       
