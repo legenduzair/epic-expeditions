@@ -92,9 +92,16 @@ def edit_review(request, expedition_id):
 def delete_review(request, expedition_id):
     expedition = TravelReview.objects.get(pk=expedition_id)
 
-    expedition.delete()
-    messages.success(request, 'Your review has been deleted!')
-    return redirect(reverse('review_list'))
+    if request.method == 'POST':
+        expedition.delete()
+        messages.success(request, 'Your review has been deleted!')
+        return redirect(reverse('review_list'))
+
+    context = {
+        "expedition": expedition,
+    }
+    return render(request, 'delete_review.html', context)
+    # return redirect(reverse('review_list'))
 
 
 def TravelPostLike(request, expedition_id):
