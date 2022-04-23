@@ -29,6 +29,12 @@ nav, footer {
     background-color: rgba(67, 58, 63, 0.6);
 }
 
+@media (max-width: 576px) {
+    .jumbotron {
+        margin-left: 20px;
+    }
+}
+
 h1 {
     font-size: 2.75rem;
     color: #FFFAFA;
