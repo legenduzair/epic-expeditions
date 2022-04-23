@@ -7,18 +7,15 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-6 offset-lg-1">
-    
+        <div class="col-12 col-md-6 col-lg-6 offset-lg-1"> 
             <h3 class="card-title my-5 text-center">{{ expedition.title }}</h3>  
-
             <div class="my-5">
                 <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top image-detail rounded-2">
             </div>
-
+            <hr>
             <div class="text-center font-weight-bold">
                 {{ expedition.excerpt }}
             </div>
-
             <div class="card-body text-center">
                 <p class="card-text p-2"> Rating:
                 <span class="fa fa-star {% if expedition.ratings > 0 %} checked {% endif %}"></span>
@@ -36,6 +33,7 @@
                     <button type="button" class="btn btn-submit">Back to Expeditions</button>
                 </a>
             </div>
+            <hr>
             <div class="text-center pt-5">
                 {% if user.is_authenticated %}
                 <form action="{% url 'review_like' expedition.id %}" method="POST">
@@ -71,6 +69,7 @@
                 {% endwith %}
                 {% endif %}
             </div>
+            <hr>
             {% if user.is_authenticated %}
                 {% if user.id == expedition.author.id %}          
                     <div class="text-center pt-5">

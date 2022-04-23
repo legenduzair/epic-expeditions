@@ -80,11 +80,6 @@ p {
         object-fit: cover;
         border-radius: 10px;
     }
-
-    .review-content {
-        margin-top: 50px;
-        margin-left: 0px;
-    }
 }
 
 @media (max-width: 991px) {
@@ -93,6 +88,13 @@ p {
         height: 40vw;
         object-fit: cover;
         border-radius: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .review-content {
+        margin-top: 125px;
+        margin-left: 20px;
     }
 }
 
@@ -142,11 +144,6 @@ p {
 
 .pagination .page-item .page-link {
     background-color: #433A3F;
-}
-
-.review-content {
-    margin-top: 125px;
-    margin-left: 50px;
 }
 
 .addreview-image {
