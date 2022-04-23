@@ -66,7 +66,6 @@ def add_review(request):
             return redirect(reverse('review_list'))
     else:
         form = TravelReviewForm()
-        messages.error(request, 'Your review has failed to post. Please try again.')
 
     return render(request, 'add_review.html', {'form': form, 'controller':'Add Review'})
 

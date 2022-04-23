@@ -2,6 +2,9 @@ from django import forms
 from .models import TravelReview, TravelComments 
 
 class TravelReviewForm(forms.ModelForm):
+    excerpt = forms.CharField(widget=forms.Textarea(attrs={
+        'rows': '3',
+    }))
 
     class Meta:
 
