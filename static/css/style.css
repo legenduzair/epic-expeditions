@@ -251,3 +251,16 @@ p {
     height: 90vh; 
 }
 
+.review-border {
+    border: 2px solid black;
+    width: max-content;
+    margin: auto;
+    padding: 20px;
+}
+
+.card-img-top-3 {
+    height: 30vw;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
