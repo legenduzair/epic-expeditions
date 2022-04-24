@@ -50,6 +50,14 @@ p {
     
 }
 
+.message-container {
+    position: fixed;
+    top: 63px;
+    z-index: 99999999999;
+    font-size: 0.8rem;
+    left: 20px;
+}
+
 section {
     background-color: rgba(191, 222, 255, 0.7);
 }
