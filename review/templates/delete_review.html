@@ -15,10 +15,10 @@
                         <p><span class="font-weight-bold">Review Preview:</span> {{ expedition.excerpt }}</p>
                         <p><span class="font-weight-bold">Review Content:</span> {{ expedition.content }}</p>
                     </div>
-                    <div>
+                    <div class="m-2">
                         <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top-3 image-detail rounded-2">
                     </div>
-                    <small class="text-muted">{{ expedition.published }} by: {{ expedition.author }}</small>
+                    <small class="font-weight-bold">Published On: {{ expedition.published }} - By: {{ expedition.author }}</small>
                 </div>
                 <form method="POST" action="" class="text-center mt-5">
                     {% csrf_token %}
