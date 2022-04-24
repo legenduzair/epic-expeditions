@@ -50,11 +50,15 @@ p {
     
 }
 
-.expedition-image {
-    background-image: url('https://res.cloudinary.com/legenduzair/image/upload/c_lfill,w_3400/v1650735091/epic-expeditions/expeditions-background_qn93jm.jpg');
+/* .expedition-image {
+    background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1650808254/epic-expeditions/expeditions-background_pwls4v.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+hr {
+    border-color: #ced4da;
 }
 
 .card-img-top {
