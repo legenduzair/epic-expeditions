@@ -319,6 +319,29 @@ hr {
     height: 90vh; 
 }
 
+.weather-nav {
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .weather-image h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 490px) {
+    .weather-image h1 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .weather-nav {
+        margin: 8px;
+    }
+}
+
+
 .review-border {
     border: 2px solid black;
     width: max-content;
