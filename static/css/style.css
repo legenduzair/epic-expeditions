@@ -198,7 +198,7 @@ hr {
     background-size: cover;
     background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1648676565/epic-expeditions/login-image_bkqsgn.jpg');
     max-width: 100vw;
-    height: 90vh;   
+    height: 100vh;   
 }
 
 .login-form-image {
@@ -258,7 +258,39 @@ hr {
     background-size: cover;
     background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1648678473/epic-expeditions/register-image_iyq5r1.jpg');
     max-width: 100vw;
-    height: 90vh; 
+    height: 100vh; 
+}
+
+.signout-image {
+    background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1650816378/epic-expeditions/signout-image_xez0l9.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 100vh; 
+}
+
+.signout-container {
+    text-align: center;
+    background-color: rgba(67, 58, 63, 0.8);
+    border-radius: 50px;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+    top: 170px;
+}
+
+@media (max-width: 520px) {
+    .signout-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .signout-container {
+        max-width: 300px;
+    }
 }
 
 .weather-nav {
