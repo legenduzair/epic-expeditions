@@ -301,6 +301,7 @@ hr {
     margin: 25px;
 }
 
+/* Weather */
 .search-btn {
     margin-top: 20px;
     margin-right: 20px;
@@ -340,6 +341,32 @@ hr {
         margin: 8px;
     }
 }
+
+.weather-card {
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #6f707d;
+}
+
+#heading {
+    font-size: 55px;
+    color: #2b304d
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>p>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px
+}
+
+.fa {
+    color: #a5a5b1
+}
+
 
 
 .review-border {

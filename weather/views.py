@@ -19,15 +19,17 @@ def search_weather(request):
         list_of_data = json.loads(source)
 
         data = {
-            "country_code": str(list_of_data['sys']['country']),
+            "city": city,
             "temp": str(list_of_data['main']['temp']) + ' °C',
-            "pressure": str(list_of_data['main']['pressure']),
             "humidity": str(list_of_data['main']['humidity']),
+            "wind": str(list_of_data['wind']['speed']),
+            "timezone": str(list_of_data['timezone']),
             "main": str(list_of_data['weather'][0]['main']),
+            "description": str(list_of_data['weather'][0]['description']),
             "icon": str(list_of_data['weather'][0]['icon']),
         }
         print(data)
     else:
         data = {}
-    
+
     return render(request, "weather.html", data)
