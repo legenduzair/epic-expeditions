@@ -343,14 +343,15 @@ hr {
 }
 
 .weather-card {
-    background-color: #ffffff;
+    background-color: rgba(255, 224, 181, 0.8);
     border-radius: 50px;
-    color: #6f707d;
+    color: #433A3F;
+    border: 2px solid #433A3F;
 }
 
 #heading {
     font-size: 55px;
-    color: #2b304d
+    color: #433A3F;
 }
 
 .temp {
@@ -359,18 +360,18 @@ hr {
 
 .temp-details>p>span,
 .grey {
-    color: #a3acc1;
+    color: #433A3F;
     font-size: 12px
 }
 
-.fa {
+/* .fa {
     color: #a5a5b1
-}
+} */
 
 
 
 .review-border {
-    border: 2px solid black;
+    border: 2px solid #433A3F;
     width: max-content;
     margin: auto;
     padding: 20px;
