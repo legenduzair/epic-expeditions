@@ -9,9 +9,10 @@ from datetime import datetime
 
 def search_weather(request):
     if request.method == 'POST':
-        city = urllib.parse.quote_plus(request.POST['city'])
-        source = urllib.request.urlopen('https://api.openweathermap.org/data/2.5/weather?q=' +
-                                        city + '&units=metric&appid=8cc5e423f92f5911e4369f44a1e605be').read()
+        city = (request.POST['city'])
+        url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=8cc5e423f92f5911e4369f44a1e605be'
+        replace_url = url.replace(" ", "%20")
+        source = urllib.request.urlopen(replace_url).read()
         list_of_data = json.loads(source)
         
         data = {
