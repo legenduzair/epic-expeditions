@@ -25,6 +25,10 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path('', include('review.urls'), name='review_urls'),
     path('accounts/', include('allauth.urls')),
-    path('error/', include('errors.urls')),
     path('weather/', include('weather.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = "errors.views.page_not_found_view"
+handler500 = 'errors.views.my_custom_error_view'
+handler403 = 'errors.views.my_custom_permission_denied_view'
+handler400 = 'errors.views.my_custom_bad_request_view'
