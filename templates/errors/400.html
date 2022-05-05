@@ -2,5 +2,14 @@
 {% load static %}
 
 {% block content %}
-<h1>400</h1>
+<section class="error-image">
+    <div class="container error-container col-11 col-lg-8 col-md-10 col-sm-10 col-xl-7">
+        <h1>Ooops!</h1>
+        <h2 class="pt-3 pb-3">400 - Bad Request.</h2>
+        <h3 class="pb-3">Your request resulted in an error.</h3>
+        <a href="{% url 'review_list' %}">
+            <button type="button" class="btn btn-submit">Back to Expeditions</button>
+        </a>
+    </div>
+</section>
 {% endblock content %}

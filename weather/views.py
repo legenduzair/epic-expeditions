@@ -10,7 +10,7 @@ from datetime import datetime
 
 class WeatherView(TemplateView):
 
-    template_name = 'errors/404.html'
+    template_name = 'errors/500.html'
 
 
 # def search_weather(request):

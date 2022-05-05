@@ -410,7 +410,6 @@ hr {
     text-align: center;
     background-color: rgba(67, 58, 63, 0.8);
     border-radius: 50px;
-    max-width: 700px;
     margin: auto;
     padding: 60px;
     position: relative;
@@ -424,5 +423,19 @@ hr {
 
 .error-container h2 {
     font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+    .error-container h1 {
+        font-size: 3rem;
+    }
+
+    .error-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .error-container h3 {
+        font-size: 1rem;
+    }
 }
 
