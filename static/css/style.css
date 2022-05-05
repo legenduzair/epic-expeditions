@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,31 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
+h1 {
+    font-size: 2.75rem;
+    color: #FFFAFA;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+}
+
+.btn {
+    background-color: #433A3F;
+    
+}
+
+section {
+    background-color: rgba(191, 222, 255, 0.7);
+}
+
+hr {
+    border-color: #433A3F;
+}
+
+/* Navbar and Footer - Styles */
 
 nav, footer {
     background: rgb(95,95,95);
@@ -19,6 +45,8 @@ nav, footer {
 .navbar-toggler {
     border-color:#433A3F;
 }
+
+/* Home Page - Styles & Media Queries */
 
 .jumbotron-image {
     background-position: center center;
@@ -39,20 +67,7 @@ nav, footer {
     }
 }
 
-h1 {
-    font-size: 2.75rem;
-    color: #FFFAFA;
-}
-
-p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.25rem;
-}
-
-.btn {
-    background-color: #433A3F;
-    
-}
+/* Message Container - Styles */
 
 .message-container {
     position: fixed;
@@ -62,20 +77,7 @@ p {
     left: 20px;
 }
 
-section {
-    background-color: rgba(191, 222, 255, 0.7);
-}
-
-/* .expedition-image {
-    background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1650808254/epic-expeditions/expeditions-background_pwls4v.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-hr {
-    border-color: #433A3F;
-}
+/* Expedition Review List & Detail Pages - Styles & Media Queries */
 
 .card-img-top {
     width: 100%;
@@ -177,6 +179,8 @@ hr {
     background-color: #433A3F;
 }
 
+/* Add Review Page - Styles & Media Queries */
+
 .addreview-image {
     background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1649000966/epic-expeditions/addreview-image_l6a1wg.jpg');
     background-position: center center;
@@ -190,6 +194,8 @@ hr {
     max-width: 80%;
     margin: auto;
 }
+
+/* Register and Login Pages - Styles & Media Queries */
 
 .login-card,
 .signup-card {
@@ -265,6 +271,8 @@ hr {
     height: 100vh; 
 }
 
+/* Sign Out Page - Styles & Media Queries */
+
 .signout-image {
     background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1650816378/epic-expeditions/signout-image_xez0l9.jpg');
     background-position: center center;
@@ -297,11 +305,12 @@ hr {
     }
 }
 
+/* Weather Page - Styles & Media Queries */
+
 .weather-nav {
     margin: 25px;
 }
 
-/* Weather */
 .search-btn {
     margin-top: 20px;
     margin-right: 20px;
@@ -364,11 +373,7 @@ hr {
     font-size: 12px
 }
 
-/* .fa {
-    color: #a5a5b1
-} */
-
-
+/* Delete Review Confirmation Page - Styles & Media Queries */
 
 .review-border {
     border: 2px solid #433A3F;
@@ -397,6 +402,8 @@ hr {
         height: 40vw;
     }
 }
+
+/* Error Pages - Styles & Media Queries */
 
 .error-image {
     background-image: url('https://res.cloudinary.com/legenduzair/image/upload/v1651790004/epic-expeditions/error-image_wwq4mh.jpg');
