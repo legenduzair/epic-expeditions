@@ -358,6 +358,38 @@ nav, footer {
     border: 2px solid #433A3F;
 }
 
+@media (max-width: 1170px) {
+
+    .weather-card h4,
+    .weather-card h6 {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 470px) {
+
+    .weather-card h4,
+    .weather-card h6 {
+        font-size: 0.9rem !important;
+    }
+
+    .temp-details {
+        padding: 0 !important;
+    }
+
+    .weather-icon {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .weather-icon img {
+        width: 70px;
+        padding-top: 20px;
+    }
+}
+
 #heading {
     font-size: 55px;
     color: #433A3F;
