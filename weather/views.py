@@ -3,6 +3,7 @@ import urllib.parse
 import urllib.request
 import json
 from datetime import datetime
+import math
 
 # Create your views here.
 
@@ -18,7 +19,7 @@ def search_weather(request):
         data = {
             "city": city,
             "dt": (list_of_data['dt']),
-            "temp": str(list_of_data['main']['temp']) + ' °C',
+            "temp": (list_of_data['main']['temp']),
             "humidity": str(list_of_data['main']['humidity']),
             "wind": str(list_of_data['wind']['speed']*2),
             "pressure": str(list_of_data['main']['pressure']),
@@ -27,6 +28,9 @@ def search_weather(request):
             "icon": str(list_of_data['weather'][0]['icon']),
         }
 
+        temp = data['temp']
+        rounded_temp = math.floor(temp)
+        full_temp = str(rounded_temp)  + ' °C'
         dt = data['dt']
         timezone = data['timezone']
         current_time = utctime_and_timezone(dt + timezone)
@@ -35,7 +39,7 @@ def search_weather(request):
         data = {
             "city": city,
             "dt": (list_of_data['dt']),
-            "temp": str(list_of_data['main']['temp']) + ' °C',
+            "temp": full_temp,
             "humidity": str(list_of_data['main']['humidity']),
             "wind": str(list_of_data['wind']['speed']*2),
             "pressure": str(list_of_data['main']['pressure']),
