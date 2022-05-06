@@ -19,6 +19,7 @@ def search_weather(request):
         data = {
             "city": city,
             "dt": (list_of_data['dt']),
+            "country_code": str(list_of_data['sys']['country']),
             "temp": (list_of_data['main']['temp']),
             "humidity": str(list_of_data['main']['humidity']),
             "wind": str(list_of_data['wind']['speed']*2),
@@ -39,6 +40,7 @@ def search_weather(request):
         data = {
             "city": city,
             "dt": (list_of_data['dt']),
+            "country": str(list_of_data['sys']['country']),
             "temp": full_temp,
             "humidity": str(list_of_data['main']['humidity']),
             "wind": str(list_of_data['wind']['speed']*2),
