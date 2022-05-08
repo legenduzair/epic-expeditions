@@ -1,8 +1,6 @@
 from django.views.generic import TemplateView
 
 
-# Create your views here.
-
-
 class HomeView(TemplateView):
+    """ Class-based function to render home page """
     template_name = 'home.html'
