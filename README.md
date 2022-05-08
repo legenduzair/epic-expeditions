@@ -25,8 +25,28 @@ This project was implemented with the purpose of developing a full-stack Django 
   - Build a platform that is user-friendly and is accessible to all.
 
 ### Entity Relationship Diagram
-  - As this project utilises Django which is a MVT(Model, View & Template) framework, a connection to database tabels or 'Models' is required. An entity relationship diagram was created to visually map out the structure of the databases & models. 
-  
+  - As this project utilises Django which is a MVT(Model, View & Template) framework, a connection to database tabels or 'Models' is required. An entity relationship diagram was created to visually map out the structure of the databases & models. The entity relationship diagram is mapped out below. 
+
+  #### Reviews App
+  | **Reviews Models** | **PK** |
+  | ----- | ----- |
+  | Review Title | CharField |
+  | Slug | SlugField |
+  | Author | ForeignKey |
+  | Content | TextField |
+  | Travel Image | Cloudinary Field |
+  | Excerpt | TextField |
+  | Published | DateField |
+  | Ratings | IntegerField |
+  | Likes | ManyToManyField |
+
+   | **Comments Models** | **PK** |
+  | ----- | ----- |
+  | Review Post | ForeignKey |
+  | Name | CharField |
+  | Body | TextField |
+  | Created On | DateTimeField |
+
 ### Agile Methodology - User Stories
   - All forms of agile methodology were managed using GitHub Issues through implementing user stories gaining potential perspectives of a target user.
 
