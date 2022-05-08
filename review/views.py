@@ -1,3 +1,4 @@
+""" System Module """
 from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,6 +9,8 @@ from .forms import TravelReviewForm, TravelCommentsForm
 
 
 class TravelReviewList(ListView):
+    """Class-based view to list expedition review list page """
+
     model = TravelReview
     template_name = 'review_list.html'
     ordering = ['-published']
@@ -15,6 +18,9 @@ class TravelReviewList(ListView):
 
 
 def review_detail(request, expedition_id):
+    """ A view to render the expedition detail page
+    with comments and likes displayed """
+
     template_name = 'review_detail.html'
     expedition = get_object_or_404(TravelReview, pk=expedition_id)
     comments = expedition.comments.order_by("-created_on")
@@ -47,6 +53,7 @@ def review_detail(request, expedition_id):
 
 @login_required
 def add_review(request):
+    """ A view to add an expedition review to the list of reviews """
 
     if request.method == 'POST':
         form = TravelReviewForm(request.POST, request.FILES or None)
@@ -55,15 +62,19 @@ def add_review(request):
             data = form.save(commit=False)
             data.author = request.user
             data.save()
-            messages.success(request, 'Your review has been posted successfully!')
+            messages.success(
+                request, 'Your review has been posted successfully!')
             return redirect(reverse('review_list'))
     else:
         form = TravelReviewForm()
 
-    return render(request, 'add_review.html', {'form': form, 'controller':'Add Review'})
+    return render(
+        request, 'add_review.html', {'form': form, 'controller': 'Add Review'})
 
 
 def edit_review(request, expedition_id):
+    """ A view to edit an expedition review """
+   
     expedition = TravelReview.objects.get(pk=expedition_id)
 
     if request.method == 'POST':
@@ -71,18 +82,24 @@ def edit_review(request, expedition_id):
 
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your review has been updated!')
+            messages.success(
+                request, 'Your review has been updated successfully!')
             return redirect('review_detail', expedition_id)
 
         else:
-            messages.error(request, 'Your review was not updated. Please try again.')
-        
+            messages.error(
+                request, 'Your review was not updated. Please try again.')
+      
     else:
         form = TravelReviewForm(instance=expedition)
-    return render(request, 'add_review.html', {'form': form, 'controller':'Edit Review'})
+    return render(
+        request, 'add_review.html',
+        {'form': form, 'controller': 'Edit Review'})
 
 
 def delete_review(request, expedition_id):
+    """ A view to delete an expedition review """
+
     expedition = TravelReview.objects.get(pk=expedition_id)
 
     if request.method == 'POST':
@@ -97,7 +114,9 @@ def delete_review(request, expedition_id):
     # return redirect(reverse('review_list'))
 
 
-def TravelPostLike(request, expedition_id):
+def post_like(request, expedition_id):
+    """ A view to add/remove a like to an expedition review """
+
     post_id = request.POST.get('review_id')
     post = get_object_or_404(TravelReview, pk=expedition_id)
     if post.likes.filter(pk=request.user.id).exists():
@@ -105,5 +124,5 @@ def TravelPostLike(request, expedition_id):
     else:
         post.likes.add(request.user)
         messages.info(request, 'You have liked this review!')
-   
+  
     return HttpResponseRedirect(reverse('review_detail', args=[post_id]))
