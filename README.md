@@ -1,6 +1,9 @@
-# Epic Expeditions
+# <div align="center">Epic Expeditions</div>
 
 ## Project Overview
+Epic Expeditions is a web application that allows the target audience to browse & create reviews of global destinations and engage in conversations with other users who are also authenticated on the website. Epic Expeditions also offers a mini weather application that allows users to search for current weather conditions of any city worldwide.
+
+This project was implemented with the purpose of developing a full-stack Django application with use of Bootstrap, HTML, CSS, JavaScript & Python as the programming tools used. It utilises CRUD functionality that allows authenticated users to create, browse, update and delete expedition reviews to the website. The weather application is implemented using [OpenWeatherMap API](https://openweathermap.org/). The allauth Django library is used to implement registration and signing in of users.
 
 ## UX & Planning
 
