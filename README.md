@@ -103,9 +103,14 @@ After completing the layout of the wireframes to create a skeleton for the proje
 
 ![Colour Palette generated on Coolors](/media/screenshots/color_scheme.png)
 
+The colours implemented in the navbar and weather search bar were generated using a gradient on [CSS Gradient](https://cssgradient.io/).
+
 ### Typography
 When designing the website, I had carefully chosen two complimentary fonts from [Google Fonts](https://fonts.google.com/); 'Quicksand' and 'Source Sans Pro'. It is important that the text on the website is clear & easy for users to read and is not too unappealing to the human eye. The letters are spaced out correctly and the style of the font fits the scheme of the website; Travelling.
 
 ### Images
 All images used for developing the website are acquired from [Unsplash](https://unsplash.com/images/stock/royalty-free). Images used to add test expedition reviews were acquired from my file explorer on my personal computer.
+
+### Icons
+The main logo of the website and two weather icons (humidity and wind speed) were acquired from [Font Awesome](https://fontawesome.com/). The pressure weather icon was acquired from [Flat Icon](https://www.flaticon.com/).
     
