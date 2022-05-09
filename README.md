@@ -101,5 +101,11 @@ This project was implemented with the purpose of developing a full-stack Django 
 ### Colour Scheme
 After completing the layout of the wireframes to create a skeleton for the project, I selected the colour scheme by generating a colour palette on [Coolors](https://coolors.co/). The colours from the palette were used as they had high level of colour contrast to maximise user accessibility. The colour palette is shown below. 
 
+![Colour Palette generated on Coolors](/media/screenshots/color_scheme.png)
 
+### Typography
+When designing the website, I had carefully chosen two complimentary fonts from [Google Fonts](https://fonts.google.com/); 'Quicksand' and 'Source Sans Pro'. It is important that the text on the website is clear & easy for users to read and is not too unappealing to the human eye. The letters are spaced out correctly and the style of the font fits the scheme of the website; Travelling.
+
+### Images
+All images used for developing the website are acquired from [Unsplash](https://unsplash.com/images/stock/royalty-free). Images used to add test expedition reviews were acquired from my file explorer on my personal computer.
     
