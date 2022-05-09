@@ -113,4 +113,18 @@ All images used for developing the website are acquired from [Unsplash](https://
 
 ### Icons
 The main logo of the website and two weather icons (humidity and wind speed) were acquired from [Font Awesome](https://fontawesome.com/). The pressure weather icon was acquired from [Flat Icon](https://www.flaticon.com/).
+
+## Features
+
+## Future Improvements
+
+## Testing
+
+## Technologies Used
+
+## Deployment
+
+## Credits
+
+
     
