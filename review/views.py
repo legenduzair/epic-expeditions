@@ -111,7 +111,6 @@ def delete_review(request, expedition_id):
         "expedition": expedition,
     }
     return render(request, 'delete_review.html', context)
-    # return redirect(reverse('review_list'))
 
 
 def post_like(request, expedition_id):
