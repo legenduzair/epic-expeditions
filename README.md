@@ -99,6 +99,7 @@ This project was implemented with the purpose of developing a full-stack Django 
 ## Surface Design
 
 ### Colour Scheme
+After completing the layout of the wireframes to create a skeleton for the project, I selected the colour scheme by generating a colour palette on [Coolors](https://coolors.co/). The colours from the palette were used as they had high level of colour contrast to maximise user accessibility. The colour palette is shown below. 
 
-### Typography
+
     
