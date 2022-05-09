@@ -308,7 +308,8 @@ nav, footer {
 /* Weather Page - Styles & Media Queries */
 
 .weather-nav {
-    margin: 25px;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .search-btn {
@@ -382,11 +383,15 @@ nav, footer {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
 
     .weather-icon img {
         width: 70px;
         padding-top: 20px;
+    }
+
+    .temp-details>p>span {
+        font-size: 0.8rem !important;
     }
 }
 
@@ -402,7 +407,7 @@ nav, footer {
 .temp-details>p>span,
 .grey {
     color: #433A3F;
-    font-size: 12px
+    font-size: 0.9rem
 }
 
 /* Delete Review Confirmation Page - Styles & Media Queries */
