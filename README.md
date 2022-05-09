@@ -82,7 +82,13 @@ This project was implemented with the purpose of developing a full-stack Django 
   | 2 | Site admin | Create, read, update and delete comments posted on travel reviews | I can manage and filter out undesirable comments |
 
 ## Project Structure
-
+  - Epic expeditions uses HTML, CSS, JavaScript & Python to create a user-friendly and intuitive web application. This project focuses on using Django/Jinja syntax to structure the code to make it more cleaner and readable during the development stage. This web application is aimed to contain a responsive and user-friendly layout so it can be accessible across different browsers & devices of various screen sizes. 
+  - The navbar is placed at the top of the webpage in a fixed position with navigation links displayed to the user to access different pages of the site. On smaller screen sizes, the navbar is converted into a hamburger menu to allow users to access the navigation links with ease.
+  - The expedition reviews are structured in card-containers which are all the same height and width to keep consistency. Eight reviews are paginated on one webpage and if more reviews are added, the user will have an option to redirect onto the next page.
+  - Each expedition review can be clicked on to access special actions such as liking and commenting, which only authenticated users can perform.
+  - Users can be authenticated by click on the 'register' and 'sign in' navigation links which redirects them to a form.
+  - The CRUD functionality is also incorporated into the project structure as authenticated users can add, update & delete their expedition reviews.
+  - The weather app is implemented into the project, where users can search for weather details of their favourite cities worldwide. Performing a search will result in a weather card with these details stated, structured beneath the search bar.   
 
 ## Project Skeleton
 
