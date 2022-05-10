@@ -172,11 +172,15 @@ nav, footer {
 }
 
 .custom-pagination {
-    background-color: transparent;
+    background: rgb(95,95,95,0);
 }
 
 .pagination .page-item .page-link {
     background-color: #433A3F;
+}
+
+.pagination {
+    margin-bottom: 0;
 }
 
 /* Add Review Page - Styles & Media Queries */
