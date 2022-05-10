@@ -173,7 +173,7 @@ The user is able to click on the like button (heart) which fills it with a green
 
 ![Likes Feature](/media/screenshots/likeheart-ss.png)
 
-### Comments 
+#### Comments 
 
 The expedition review detail page also includes a comments section that provides the user with an option to engage in conversations with other registered users. The comments section is located at the bottom of each review detail page. If the user is not signed in, the webpage will display a message prompting the user to sign in to leave a comment. Comments posted by other users are visible to anyone. If there are no comments, the webpage will display a message indicating that there are no comments posted.
 
@@ -182,6 +182,19 @@ The expedition review detail page also includes a comments section that provides
 If the user is authenticated and logged in, a text-box will appear prompting the user to leave a comment. Comments posted on a review will be displayed with the author, the published date & time and the content of the comment.
 
 ![Comments Section Two](/media/screenshots/commentstwo-ss.png)
+
+#### Edit or Delete Review
+An expedition review that is posted by a specific user has the ability to edit or delete the review. The 'Edit Review' and 'Delete Review' buttons will be displayed to the user on their post on the expedition review detail page. It is important to note that other authenticated users cannot edit or delete other users reviews. 
+
+![Edit & Delete Buttons](/media/screenshots/editdelete-ss.png)
+
+If the user decides to edit the review, they will be navigated to the edit review page where they can edit any details of the review by completing the form.
+
+![Edit Review Form](/media/screenshots/editreview-ss.png)
+
+If the user decides to delete the review, they will be navigated to a webpage that requests to confirm if they want to make this deletion. The details of the review are also listed to make sure the correct post is deleted. This confirmation of deletion was inputted into the project as use of defensive programming. If the user clicks on 'Delete Review', the review is deleted from the database.
+
+![Delete Review Page](/media/screenshots/deletereview-ss.png)
 
 ## Future Improvements
 
