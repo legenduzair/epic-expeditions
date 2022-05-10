@@ -201,6 +201,24 @@ The Add Review page will be displayed among the navigation links in the header i
 
 ![Add Review Page](/media/screenshots/addreview-ss.png)
 
+### Authentication
+To access many of the website features, the user will be required to register for an account and sign in using their credentials. To implement authentication in this project, I have used Django's own library; allauth. If the user is not authenticated, the navigation links will contain 'Register' and 'Sign In'.
+
+#### Register Page
+The register page contains a registration form that prompts the user to complete it by entering their email address, username and password (twice).
+
+![Register Page](/media/screenshots/registerpage-ss.png)
+
+#### Sign In Page
+The sign in page contains a sign in form that prompts the user to fill it in by entering their email address/username and password. If the user doesn't have an account, they can opt to select the 'create new' button.
+
+![Sign In Page](/media/screenshots/signinpage-ss.png)
+
+#### Sign Out Page
+If the user is logged in, they will have the option to sign out by clicking on the 'Logout' navigation link. This will navigate them to the sign out page where the website will request to confirm they want to logout. 
+
+![Sign Out Page](/media/screenshots/signoutpage-ss.png)
+
 ## Future Improvements
 
 ## Testing
