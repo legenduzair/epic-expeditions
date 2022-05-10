@@ -219,6 +219,15 @@ If the user is logged in, they will have the option to sign out by clicking on t
 
 ![Sign Out Page](/media/screenshots/signoutpage-ss.png)
 
+### Weather App
+Epic Expeditions has a mini-weather app which uses [OpenWeatherMap API](https://openweathermap.org/) to pull data of current weather for any city globally. Any user can access this by clicking on the 'Weather' navigation link in the navbar. The user will be prompted to search for any city name by entering it into the search bar and clicking the interactive search button.
+
+![Weather App](/media/screenshots/weatherapp-ss.png)
+
+After searching for a city, the webpage will gather data from the API and display it on a weather card. The weather card has details such as the city name, country code, local time, temperature in degrees (Celsius), small description of the weather, weather icon, wind speed, humdity and pressure. These weather details are all in real-time.
+
+![Weather Card](/media/screenshots/weathercard-ss.png)
+
 ## Future Improvements
 
 ## Testing
