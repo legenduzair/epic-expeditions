@@ -160,6 +160,19 @@ If there are more than eight expedition reviews on the review listing page and a
 
 ![Second Pagination Screenshot](/media/screenshots/paginationtwo-ss.png)
 
+### Expedition Review Detail
+When a user clicks on any expedition review card on the listing page, they will be taken to their respective review detail page. On this page, users can view the expedition review in detail. These include title of the review, an enlarged image of the expedition, the author & published date, the excerpt, star ratings and the detailed expedition review text which is located on the right. As well as this, the user also has an option to traverse back to the expedition reviews list page in the form of an interactive button. If the user is not authenticated, there is a line of text which prompts the user to sign in to like the review or leave a comment. The number of likes and comments are also listed.
+
+![Expedition Review Detail](/media/screenshots/expeditiondetail-ss.png)
+
+If the user is authenticated, they will have an option to like the review and post a comment in the comments section.
+
+![Likes & Comments Section](/media/screenshots/likecomment-ss.png)
+
+The user is able to click on the like button (heart) which fills it with a green colour that indicates to the user that they liked the review. The text also changes. 
+
+![Likes Feature](/media/screenshots/likeheart-ss.png)
+
 ## Future Improvements
 
 ## Testing
