@@ -154,6 +154,12 @@ Each expedition review on the listing page is displayed in its own review card. 
 
 ![Expedition Review Card](/media/screenshots/reviewcard-ss.png)
 
+If there are more than eight expedition reviews on the review listing page and another review is posted, an interactive button will display to the user prompting them to navigate to the next review listing page. If the user is on the second page, it will provide them with an interactive button to redirect to the previous & first page.
+
+![First Pagination Screenshot](/media/screenshots/paginationone-ss.png)
+
+![Second Pagination Screenshot](/media/screenshots/paginationtwo-ss.png)
+
 ## Future Improvements
 
 ## Testing
