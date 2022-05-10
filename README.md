@@ -122,6 +122,11 @@ The main logo of the website and two weather icons (humidity and wind speed) wer
 
 ## Features
 
+### Home Page
+The home page aims to welcome the user to Epic Expeditions with a welcome message and slogan underneath. There is also an interactive button that navigates the user to the expeditions review list page to allow them to browse what is already posted by other users. The background image of the home page is vibrant to provide the user with a happy vibe when first glancing at the website.
+
+![Epic Expeditions Home Page](/media/screenshots/homepage-ss.png)
+
 ## Future Improvements
 
 ## Testing
