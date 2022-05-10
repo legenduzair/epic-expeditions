@@ -129,14 +129,21 @@ The home page aims to welcome the user to Epic Expeditions with a welcome messag
 
 ### Navigation Header
 The main navigation bar is located at the top of the webpage, displaying name of the website with a logo and navigation links that the user would require. 
+
 ![Main Navbar](/media/screenshots/navbar-ss.png)
 
 If the user is authenticated on the website, a secondary user menu is available that display the 'Add Review' and 'Logout' navigation links instead of 'Register' and 'Sign In'. 
+
 ![Secondary Navbar](/media/screenshots/navbartwo-ss.png)
 
 The navigation bar is fully responsive and adapts to devices with medium/smaller screen sizes by adding a hamburger menu. This hamburger icon can be selected to bring up a user menu that drops down below.
+
 ![Responsive Navbar](/media/screenshots/navbar-respo-ss.png)
 
+### Footer
+A consistent footer is used throughout the website on all pages which encourages the user to visit the social media accounts of the company. When a user clicks on any of the social media icons, the target website is opened in a new tab. The footer also lists copyright information.
+
+![Footer](/media/screenshots/footer-ss.png)
 
 ## Future Improvements
 
