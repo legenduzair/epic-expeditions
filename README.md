@@ -173,6 +173,16 @@ The user is able to click on the like button (heart) which fills it with a green
 
 ![Likes Feature](/media/screenshots/likeheart-ss.png)
 
+### Comments 
+
+The expedition review detail page also includes a comments section that provides the user with an option to engage in conversations with other registered users. The comments section is located at the bottom of each review detail page. If the user is not signed in, the webpage will display a message prompting the user to sign in to leave a comment. Comments posted by other users are visible to anyone. If there are no comments, the webpage will display a message indicating that there are no comments posted.
+
+![Comments Section One](/media/screenshots/commentsone-ss.png)
+
+If the user is authenticated and logged in, a text-box will appear prompting the user to leave a comment. Comments posted on a review will be displayed with the author, the published date & time and the content of the comment.
+
+![Comments Section Two](/media/screenshots/commentstwo-ss.png)
+
 ## Future Improvements
 
 ## Testing
