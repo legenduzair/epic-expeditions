@@ -196,6 +196,11 @@ If the user decides to delete the review, they will be navigated to a webpage th
 
 ![Delete Review Page](/media/screenshots/deletereview-ss.png)
 
+### Add a Review
+The Add Review page will be displayed among the navigation links in the header if the user is authenticated and signed in. Clicking on this link will navigate the user to the Add Review page where they will be required to complete the fields in the form. These fields include title of the review, image, exceprt, review content and star ratings (out of 5). Once the form is filled out, the user will be prompted to select the 'Add Review' button where they will be redirected to the expedition reviews list page. The user will see their newly posted review at the top.
+
+![Add Review Page](/media/screenshots/addreview-ss.png)
+
 ## Future Improvements
 
 ## Testing
