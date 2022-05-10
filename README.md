@@ -145,6 +145,15 @@ A consistent footer is used throughout the website on all pages which encourages
 
 ![Footer](/media/screenshots/footer-ss.png)
 
+### Expedition Reviews List
+The expedition review listing page contains posted reviews of travel destinations by authenticated users. On this page, users can browse through these expedition reviews that are ordered by the published date in descending order.
+
+![Expedition Reviews List](/media/screenshots/expeditionlist-ss.png)
+
+Each expedition review on the listing page is displayed in its own review card. The structure of the card remains consistent across all expedition reviews. Each card contains the review title, an image of the expedition, a small excerpt, star ratings (out of 5), number of likes & comments and the author & published date. The excerpt is truncated if the length of the text is more than one line.
+
+![Expedition Review Card](/media/screenshots/reviewcard-ss.png)
+
 ## Future Improvements
 
 ## Testing
