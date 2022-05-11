@@ -5,6 +5,43 @@ Epic Expeditions is a web application that allows the target audience to browse 
 
 This project was implemented with the purpose of developing a full-stack Django application with use of Bootstrap, HTML, CSS, JavaScript & Python as the programming tools used. It utilises CRUD functionality that allows authenticated users to create, browse, update and delete expedition reviews to the website. The weather application is implemented using [OpenWeatherMap API](https://openweathermap.org/). The allauth Django library is used to implement registration and signing in of users.
 
+## Table of Contents
+- [UX & Planning](https://github.com/legenduzair/epic-expeditions#ux--planning)
+  - [Project Strategy](https://github.com/legenduzair/epic-expeditions#project-strategy)
+    - [Project Goal](https://github.com/legenduzair/epic-expeditions#project-goal)
+    - [Target Audience](https://github.com/legenduzair/epic-expeditions#target-audience)
+  - [Project Scope](https://github.com/legenduzair/epic-expeditions#project-scope)
+    - [Site Owner Goals](https://github.com/legenduzair/epic-expeditions#site-owner-goals)
+    - [Entity Relationship Diagram](https://github.com/legenduzair/epic-expeditions#entity-relationship-diagram)
+    - [Agile Methodology - User Stories](https://github.com/legenduzair/epic-expeditions#agile-methodology---user-stories)
+  - [Project Structure](https://github.com/legenduzair/epic-expeditions#project-structure)
+  - [Project Skeleton](https://github.com/legenduzair/epic-expeditions#project-skeleton)
+   - [Wireframes](https://github.com/legenduzair/epic-expeditions#wireframes)
+  - [Surface Design](https://github.com/legenduzair/epic-expeditions#surface-design)
+    - [Colour Scheme](https://github.com/legenduzair/epic-expeditions#colour-scheme)
+    - [Typography](https://github.com/legenduzair/epic-expeditions#typography)
+    - [Images](https://github.com/legenduzair/epic-expeditions#images)
+    - [Icons](https://github.com/legenduzair/epic-expeditions#icons)
+- [Features](https://github.com/legenduzair/epic-expeditions#features)
+  - [Home Page](https://github.com/legenduzair/epic-expeditions#home-page)
+  - [Navigation Header](https://github.com/legenduzair/epic-expeditions#navigation-header)
+  - [Footer](https://github.com/legenduzair/epic-expeditions#footer)
+  - [Expedition Reviews List](https://github.com/legenduzair/epic-expeditions#expedition-reviews-list)
+  - [Expedition Review Detail](https://github.com/legenduzair/epic-expeditions#expedition-review-detail)
+    - [Comments](https://github.com/legenduzair/epic-expeditions#comments)
+    - [Edit or Delete Review](https://github.com/legenduzair/epic-expeditions#edit-or-delete-review)
+  - [Add a Review](https://github.com/legenduzair/epic-expeditions#add-a-review)
+  - [Authentication](https://github.com/legenduzair/epic-expeditions#authentication)
+    - [Register Page](https://github.com/legenduzair/epic-expeditions#register-page)
+    - [Sign In Page](https://github.com/legenduzair/epic-expeditions#sign-in-page)
+    - [Sign Out Page](https://github.com/legenduzair/epic-expeditions#sign-out-page)
+  - [Weather App](https://github.com/legenduzair/epic-expeditions#weather-app)
+- [Future Improvements](https://github.com/legenduzair/epic-expeditions#future-improvements)
+- [Testing](https://github.com/legenduzair/epic-expeditions#testing)
+- [Technologies Used](https://github.com/legenduzair/epic-expeditions#technologies-used)
+- [Deployment](https://github.com/legenduzair/epic-expeditions#deployment)
+- [Credits](https://github.com/legenduzair/epic-expeditions#credits)
+
 ## UX & Planning
 
 ## Project Strategy
