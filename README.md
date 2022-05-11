@@ -263,7 +263,7 @@ The follow programming technologies were used in the development of this project
  - JavaScript
    - Custom JavaScript code was added to implement the star ratings feature for expedition reviews and message alerts that appear after a specific action is performed.
   
- - Bootstrap 4.5.0
+ - Bootstrap 4.5.0 & MD Bootstrap 4.19.1
    - Bootstrap framework was used to implement the navbar, footer and structure the general content across the project.
 
  - Font Awesome 5.15.4
