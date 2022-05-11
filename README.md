@@ -243,6 +243,40 @@ There are several improvements to functionality that I would like to implement i
 ## Testing
 
 ## Technologies Used
+The follow programming technologies were used in the development of this project:
+
+ - Python 
+   - The following python packages were installed and used for this project:
+
+   ![Installed Python Packages](/media/screenshots/requirementstxt-ss.png)
+
+ - Django
+   - Django was used as the primary Python framework for this project.
+   - Django's authentication library; allauth, was used to implement user account authentication.
+  
+ - Heroku
+   - Heroku is the cloud based platform used to deploy this website and make it public.
+
+ - Heroku PostgreSQL
+   - Heroku PostgreSQL was used as the database choice for this project during development.
+  
+ - JavaScript
+   - Custom JavaScript code was added to implement the star ratings feature for expedition reviews and message alerts that appear after a specific action is performed.
+  
+ - Bootstrap 4.5.0
+   - Bootstrap framework was used to implement the navbar, footer and structure the general content across the project.
+
+ - Font Awesome 5.15.4
+   - Font Awesome icons were used in different sections of the project where appropriate.
+
+ - CSS
+   - Custom CSS was written to implement my own styling into the project. It was also used to add media queries to provide responsive across different viewport sizes.
+
+ - Jinja/Django Templating
+   - Jinja templating was used to insert information from the database into the website. This includes transferring the logic from the app models.py & views.py to the template HTML pages.
+
+ - HTML 
+   - HTML was the base language used to code the templates for the project.
 
 ## Deployment
 
