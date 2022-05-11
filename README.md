@@ -233,6 +233,12 @@ After searching for a city, the webpage will gather data from the API and displa
 ![Weather Card](/media/screenshots/weathercard-ss.png)
 
 ## Future Improvements
+There are several improvements to functionality that I would like to implement in the future. Some of these improvements have been gathered from the user stories on GitHub Issues project kanban board. These user stories have not been completed and would be implemented as future enhancement opportunities. These include:
+
+  - The ability to recover a user's password if it has been stolen/forgotten/corrupted. This functionality is part of the allauth library which has already been installed in this project but only needs to be setup to make this functional. 
+  - The ability for users to search for travel reviews using a search bar implemented in the navigation header. 
+  - The ability for users to filter travel reviews by date (ascending or descending), ratings or alphabetical order.
+  - The ability for users to edit and delete their posted comments under an expedition review.
 
 ## Testing
 
