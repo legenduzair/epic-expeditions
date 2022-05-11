@@ -55,12 +55,15 @@ This project was implemented with the purpose of developing a full-stack Django 
   | Account Registration | | | |
   | 1 | Site user | Register for an account by choosing a username, email address & password | I can have a personal account to post reviews and comments |
   | 2 | Site user | Login and logout | Only I can access my personal account |
+  | 3 | Site user | Recover my password if it has been forgotten/stolen/corrupted | I can recover access to my account |
   | View & Navigate | | | |
   | 1 | Site user | View all travel reviews posted by other users | I can browse through all reviews posted by registered users and also select a specific review to read in detail |
   | 2 | Site user | Click on a travel review | I can read the full review which contains more information such as full text, image of the destination and ratings |
   | 3 | Site user | View the ratings of the travel destinations on their corresponding reviews | I can see which is the most popular destinations to visit |
   | 4 | Site user | View comments made by registered users on reviews | I can read the conversation between different users |
   | 5 | Site user | Navigate through different pages | I can view all of the reviews posted on the website |
+  | 6 | Site user | Search for travel reviews by entering the place of interest on the navbar | I can easily access a review of a specific destination I would like to view |
+  | 7 | Site user | Filter the travel reviews by date (ascending or descending), ratings or alphabetical order | I can select a travel review of a specific destination |
   | Creating a Review/Review Management | | | |
   | 1 | Registered user | Create a review on a travel destination | My review is posted on the website for others to view and comment on |
   | 2 | Registered user | Input an image I have personally taken of the destination in my review | Other users can view the uploaded image on my review |
@@ -72,6 +75,7 @@ This project was implemented with the purpose of developing a full-stack Django 
   | 1 | Registered user | delete any uploaded reviews | I can remove this off the website so other users cannot view it |
   | Comments Management | | | |
   | 1 | Registered user | Post a comment on a travel review | Other users can view my comment and engage in a conversation with me |
+  | 2 | Registered user | Edit or delete a comment I have posted on a travel review | The comment is updated/removed from the review so that other users cant view it |
   | Comments Management/Review Management | | | |
   | 1 | Registered user | Enter my full name into the author field when creating a review/posting a comment| Other users can see who is posting the relevant content |
   | Weather Management | | | |
