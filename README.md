@@ -39,6 +39,9 @@ This project was implemented with the purpose of developing a full-stack Django 
 - [Future Improvements](https://github.com/legenduzair/epic-expeditions#future-improvements)
 - [Testing](https://github.com/legenduzair/epic-expeditions#testing)
 - [Technologies Used](https://github.com/legenduzair/epic-expeditions#technologies-used)
+  - [Languages & Frameworks](https://github.com/legenduzair/epic-expeditions#languages--frameworks)
+  - [Packages](https://github.com/legenduzair/epic-expeditions#packages)
+  - [Resources](https://github.com/legenduzair/epic-expeditions#resources)
 - [Deployment](https://github.com/legenduzair/epic-expeditions#deployment)
 - [Credits](https://github.com/legenduzair/epic-expeditions#credits)
 
