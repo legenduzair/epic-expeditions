@@ -156,7 +156,7 @@ The colours implemented in the navbar and weather search bar were generated usin
 When designing the website, I had carefully chosen two complimentary fonts from [Google Fonts](https://fonts.google.com/); 'Quicksand' and 'Source Sans Pro'. It is important that the text on the website is clear & easy for users to read and is not too unappealing to the human eye. The letters are spaced out correctly and the style of the font fits the scheme of the website; Travelling.
 
 ### Images
-All images used for developing the website are acquired from [Unsplash](https://unsplash.com/images/stock/royalty-free). Images used to add test expedition reviews were acquired from my file explorer on my personal computer.
+All images used for developing the website are acquired from [Unsplash](https://unsplash.com/images/stock/royalty-free) and were uploaded into my code using [Cloudinary](https://cloudinary.com/). Images used to add test expedition reviews were acquired from my file explorer on my personal computer.
 
 ### Icons
 The main logo of the website and two weather icons (humidity and wind speed) were acquired from [Font Awesome](https://fontawesome.com/). The pressure weather icon was acquired from [Flat Icon](https://www.flaticon.com/).
@@ -280,7 +280,10 @@ There are several improvements to functionality that I would like to implement i
 ## Testing
 
 ## Technologies Used
-The follow programming technologies were used in the development of this project:
+
+### Languages & Frameworks
+
+The follow programming languages & frameworks were used in the development of this project:
 
  - Python 
    - The following python packages were installed and used for this project:
@@ -314,6 +317,31 @@ The follow programming technologies were used in the development of this project
 
  - HTML 
    - HTML was the base language used to code the templates for the project.
+
+### Packages
+
+The following packages were used during development of my project:
+  
+  - Gitpod - IDE used for the development of the project.
+  - VS Code - IDE used for the development of the project.
+  - Git - Used for version control and transferring files from VS Code to the repository.
+  - GitHub - Used to create respository to store files for this project.
+
+### Resources
+
+The following resources were used during development of my project:
+
+  - Balsamiq Wireframes - Used to design the wireframes for the website.
+  - DrawSQL.app - Used to sketch entity relationship diagram before documenting in the README.
+  - Cloudinary - Used for hosting project media images and static files.
+  - Summernote - Library used to create the WYSIWYG form editor.
+  - Django Documentation - Used extensively during the development of the project.
+  - Django AllAuth - Used to implement authentication of users to website.
+  - OpenWeatherMap API - Used to create the weather app for the project.
+  - W3Schools - Used as a general reference to research specific content.
+  - StackOverflow - Very helpful reference to research specific content.
+
+All other resources are referenced where appropriate.
 
 ## Deployment
 
