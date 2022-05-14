@@ -5,6 +5,10 @@ Epic Expeditions is a web application that allows the target audience to browse 
 
 This project was implemented with the purpose of developing a full-stack Django application with use of Bootstrap, HTML, CSS, JavaScript & Python as the programming tools used. It utilises CRUD functionality that allows authenticated users to create, browse, update and delete expedition reviews to the website. The weather application is implemented using [OpenWeatherMap API](https://openweathermap.org/). The allauth Django library is used to implement registration and signing in of users.
 
+![Website Image](/media/screenshots/website-image.png)
+
+[View the live website on Heroku.](https://epic-expeditions.herokuapp.com/)
+
 ## Table of Contents
 - [UX & Planning](https://github.com/legenduzair/epic-expeditions#ux--planning)
   - [Project Strategy](https://github.com/legenduzair/epic-expeditions#project-strategy)
