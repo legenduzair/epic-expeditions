@@ -6,6 +6,8 @@ During and after the development of Epic Expeditions, the project went through r
 
 ## Manual Testing
 
+### User Stories
+
 All user stories were tested during and after development of this project. Below is a summary of the results acquired. The user stories that have not been completed have already been documented in the [Future Improvements](https://github.com/legenduzair/epic-expeditions#future-improvements) section.
 
 | |**User Story**| **Achieved** |
@@ -45,6 +47,92 @@ All user stories were tested during and after development of this project. Below
 
 *This user story has been updated during development of the project. The comments section of the blog does not allow you to put your full name but automatically inputs your username, allowing other users to view who is commenting.
 
+### Integration Testing
+
+The integration testing method via test cases was used when developing code for a specific feature of the project. This helped with finding errors and defects early during development to minimise problems with functionality of the website. The test cases were separated into different sections via ID's.
+
+#### Navigation Header
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select company name & logo | Redirect to Home Page |
+| 2 | Select Home link | Redirect to Home Page |
+| 3 | Select Expeditions link | Navigate to expeditions review list page where different user-posted reviews are present |
+| 4 | Select Weather link | Navigate to weather app |
+| 5 | Select Register | Navigate to register page where a register form is present |
+| 6 | Select Sign In | Navigate to sign in page where a sign in form is present |
+| 7 | If a user is signed in, select Add Review link | Navigate to the add review page where user can access add review form | 
+| 8 | If a user is signed in, select Logout link | Navigate to sign out page where user is faced with an option to sign out or go back | 
+
+#### Footer 
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select Facebook icon | Navigate to Facebook website |
+| 2 | Select Twitter icon | Navigate to Twitter website |
+| 3 | Select Instagram icon | Navigate to Instagram website |
+| 4 | Select LinkedIn icon | Navigate to LinkedIn website |
+| 5 | Select GitHub icon | Navigate to GitHub website |
+| 6 | Hover over social media icons | Icons change colour | 
+
+#### Home Page 
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select 'Take a look at some expeditions' button | Navigate to expeditions review list page |
+
+#### Expeditions Review List Page
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select any expedition review card | Navigate to the review detail page of that expedition |
+| 2 | Select Next page | Navigate to second page of expedition reviews |
+| 3 | Select Previous/First page | Navigate to previous/first page |
+
+#### Expeditions Review Detail Page
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select 'Back to Expeditons' button | Redirect to expeditions review list page |
+| 2 | Select 'sign in' & 'login' hyperlinks | Navigate to sign in page |
+| 3 | If user is signed in, select heart icon | Like the review |
+| 4 | If user is on their posted review, select 'Edit Review' button | Navigate to edit review form |
+| 5 | If user is on their posted review, select 'Delete Review' button | Navigate to delete review page |
+
+#### Edit & Delete Review Pages
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | On edit review page, select 'Edit Review' button after completing fields | User review is updated |
+| 2 | On delete review page, select 'Delete Review' button | User review is deleted from expeditions list |
+
+#### Register & Sign In Pages
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | On register page, complete registration form and select 'Register' | Account created & redirect to home page |
+| 2 | On sign in page, complete sign in form and select 'Log In' | Signed in account & redirect to home page | 
+
+#### Add Review Page
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Complete fields as required and select 'Add Review' button | Review posted to expeditions list page |
+| 2 | Select 'choose file' to upload image | Image uploaded |
+| 3 | Click on star ratings from 1 to 5 | Ratings saved after adding review |
+
+#### Logout Page
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Select 'Sign Out' button | Logged out of account & redirected to expeditions list page |
+| 2 | Select 'Cancel' button | Redirected to expeditions list page |
+
+#### Weather Page
+
+| **Test Case ID** | **Description** | **Expected Outcome** |
+| ----- | ----- | ----- |
+| 1 | Enter city name with and without spaces in search bar & select 'Search' button | Weather card containing details of searched appears |
 
 ## Validation Testing
 
