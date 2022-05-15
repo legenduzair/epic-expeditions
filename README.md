@@ -286,7 +286,7 @@ There are several improvements to functionality that I would like to implement i
 
 ## Testing
 
-A full detailed breakdown of all testing strategies and code validation techniques is documented in a separate file called [TESTING.md](https://github.com/legenduzair/epic-expeditions/blob/main/TESTING.md)
+A full detailed breakdown of all testing strategies and code validation techniques is documented in a separate file called [TESTING.md](https://github.com/legenduzair/epic-expeditions/blob/main/TESTING.md).
 
 ## Technologies Used
 
