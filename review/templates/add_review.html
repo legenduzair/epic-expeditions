@@ -12,14 +12,16 @@
             <form method="POST" class="add-review" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <p class="card-text">
+
+                <div class="pb-2">
                     <h5>Rate Your Expedition!</h5>
                     <span class="fa fa-star star_rating fa-2x my-btn" id="first"></span>
                     <span class="fa fa-star star_rating fa-2x my-btn" id="second"></span>
                     <span class="fa fa-star star_rating fa-2x my-btn" id="third"></span>
                     <span class="fa fa-star star_rating fa-2x my-btn" id="fourth"></span>
                     <span class="fa fa-star star_rating fa-2x my-btn" id="fifth"></span>
-                </p>
+                </div>
+                
                 <input type="submit" value="{{ controller }}" class="btn btn-info">
             </form>
         </div>

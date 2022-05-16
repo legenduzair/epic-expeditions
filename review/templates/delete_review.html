@@ -20,7 +20,7 @@
                     </div>
                     <small class="font-weight-bold">Published On: {{ expedition.published }} - By: {{ expedition.author }}</small>
                 </div>
-                <form method="POST" action="" class="text-center mt-5">
+                <form method="POST" class="text-center mt-5">
                     {% csrf_token %}
                     <button type="submit" class="btn btn-danger">Delete Review</button>
                     <a href="{% url 'review_list' %}" class="btn btn-submit">Back to Expeditions</a>
