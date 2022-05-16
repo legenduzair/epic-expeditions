@@ -37,7 +37,7 @@ class TravelReview(models.Model):
     def __str__(self):
         """ Returns a string of the title of an expedition """
         return str(self.title)
-          
+
     def no_of_likes(self):
         """ Returns the number of likes on an expedition review """
         return self.likes.count()

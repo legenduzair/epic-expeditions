@@ -74,7 +74,7 @@ def add_review(request):
 
 def edit_review(request, expedition_id):
     """ A view to edit an expedition review """
-   
+
     expedition = TravelReview.objects.get(pk=expedition_id)
 
     if request.method == 'POST':
@@ -89,7 +89,7 @@ def edit_review(request, expedition_id):
         else:
             messages.error(
                 request, 'Your review was not updated. Please try again.')
-      
+
     else:
         form = TravelReviewForm(instance=expedition)
     return render(
@@ -123,5 +123,5 @@ def post_like(request, expedition_id):
     else:
         post.likes.add(request.user)
         messages.info(request, 'You have liked this review!')
-  
+
     return HttpResponseRedirect(reverse('review_detail', args=[post_id]))

@@ -167,6 +167,20 @@ All Python code developed in this project was validated using [PEP8 Online Check
     - [settings.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/settings-ss.png)
     - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/urls-ss.png)
     - [wsgi.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/wsgi-ss.png)
+  - Errors App
+    - [apps.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/errorapps-ss.png)
+    - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/errorviews-ss.png)
+  - Home App
+    - [apps.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/homeapps-ss.png)
+    - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/homeapps-ss.png)
+    - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/homeviews-ss.png)
+  - Reviews App
+    - [admin.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewadmin-ss.png)
+    - [apps.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewapps-ss.png)
+    - [forms.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewforms-ss.png)
+    - [models.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewmodels-ss.png)
+    - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewurls-ss.png)
+    - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewviews-ss.png)
 
 ## Accessibility Testing
 
