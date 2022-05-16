@@ -160,7 +160,13 @@ Both custom JavaScript files were validated using [JS Hint](https://jshint.com/)
 
 ### Python Validation
 
-All Python code developed in this project was validated using [PEP8 Online Check](http://pep8online.com/).
+All Python code developed in this project was validated using [PEP8 Online Check](http://pep8online.com/). Screenshots of all validation reports are listed below:
+
+  - Epic Expeditions Folder
+    - [asgi.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/asgi-ss.png)
+    - [settings.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/settings-ss.png)
+    - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/urls-ss.png)
+    - [wsgi.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/wsgi-ss.png)
 
 ## Accessibility Testing
 
