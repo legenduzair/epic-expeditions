@@ -181,6 +181,11 @@ All Python code developed in this project was validated using [PEP8 Online Check
     - [models.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewmodels-ss.png)
     - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewurls-ss.png)
     - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/reviewviews-ss.png)
+  - Weather App
+    - [apps.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherapps-ss.png)
+    - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherurls-ss.png)
+    - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherviews-ss.png)
+
 
 ## Accessibility Testing
 

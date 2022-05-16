@@ -19,7 +19,7 @@ def search_weather(request):
         replace_url = url.replace(" ", "%20")
         source = urllib.request.urlopen(replace_url).read()
         list_of_data = json.loads(source)
-    
+
         data = {
             "city": city,
             "dt": (list_of_data['dt']),
@@ -57,7 +57,7 @@ def search_weather(request):
 
     else:
         data = {}
- 
+
     return render(request, "weather.html", data)
 
 
