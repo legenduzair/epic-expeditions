@@ -193,3 +193,34 @@ All Python code developed in this project was validated using [PEP8 Online Check
 ### WAVE Evaluation
 
 ## Bugs and Fixes
+
+The following section consists of many bugs that were encountered and fixed during the development of this project. 
+
+- Bug No 1
+  - Issue: When uploading an image on the 'Add Review' page and selecting the Add Review button to post it, the image would not display on the expeditions review card.
+  - Cause: This was because to upload a file, a specific type of request is needed in the views.py file to handle that situation.
+  - Fix: I added 'request.FILES' in the 'Add Review' view in views.py file. I also added an 'enctype' attribute to the add review HTML form which is needed for forms which contain file uploads.
+- Bug No 2
+  - Issue: When initially testing the comments section, any comment that I wrote was not posting to the comments. A 'null value in column violates not-null contraint' error was appearing.
+  - Cause: This appeared because I had accidentally inserted 'new_comment.expedition = expedition' in the review_detail view in views.py file. The '.expedition' was not doing anything.
+  - Fix: I changed the 'new_comment.expedition' to 'new_comment.post' to allow Django to post comments.
+- Bug No 3
+  - Issue: When registering for an account on the website, I encountered a 'ConnectionRefusedError' after entering an email address.
+  - Cause: This was due to non-existent backend attributes in the settings.py file for email authentication.
+  - Fix: I inserted email backends into the settings.py file; "EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'".
+- Bug No 4
+  - Issue: After posting an expedition review to the review list, the author of the user (username) was not displaying properly in the card footer. 
+  - Cause: This was due to the author field from models.py file not being mentioned in the views.py file, in the add_review view. 
+  - Fix: I added 'data.author = request.user' which allowed my Django project to relate to the username that was posting the expedition review.
+- Bug No 5
+  - Issue: The browser would keep refreshing after entering credentials in the sign in and registration allauth forms, preventing authentication.
+  - Cause: This was due to amending the allauth HTML templates when customising the forms by adding bootstrap content.
+  - Fix: I re-added the Jinja syntax 'form_as_p' in both login and signup HTML templates.
+- Bug No 6
+  - Issue: When developing the Delete Review confirmation page, I faced problems with deleting the review from the database after selecting the 'Delete Review' button.
+  - Cause: This was due to a delete review form and POST request not being present in the HTML & views.py files.
+  - Fix: I added a POST form to the delete_review html template and a POST request to the delete_review view in views.py file. This allowed for the chosen review to be deleted.
+- Bug No 7
+  - Issue: When searching for a city that has a space in between such as 'New York' or 'Cape Town' in the weather app, it would throw a Django error.
+  - Cause: This is because the api URL requested cannot contain whitespaces. 
+  - Fix: I used the .replace python feature to replace any whitespace in a city's name with '%20'. This is commonly used in URLs that query strings with whitespaces.
