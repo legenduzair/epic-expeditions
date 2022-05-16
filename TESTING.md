@@ -158,6 +158,10 @@ Both custom JavaScript files were validated using [JS Hint](https://jshint.com/)
 
 ![JS Hint check two](/media/testing/jschecktwo-ss.png)
 
+### Python Validation
+
+All Python code developed in this project was validated using [PEP8 Online Check](http://pep8online.com/).
+
 ## Accessibility Testing
 
 ### Lighthouse Evaluation
