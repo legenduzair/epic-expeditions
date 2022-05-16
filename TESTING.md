@@ -160,7 +160,7 @@ Both custom JavaScript files were validated using [JS Hint](https://jshint.com/)
 
 ### Python Validation
 
-All Python code developed in this project was validated using [PEP8 Online Check](http://pep8online.com/). Screenshots of all validation reports are listed below:
+All Python code developed in this project was validated using [PEP8 Online Check](http://pep8online.com/). The only error that was reported by the Python Validator was on the models.py file for the Reviews app. This error is linked to the cloudinary field attribute being longer than 79 characters due to the placeholder URL. The settings.py file contains five 'longer than 79 characters' errors. This is due to the Django default code pointing to password validation paths or from Cloudinary code pointing to the cloudinary storage service, thus cannot be prevented. Screenshots of all validation reports are listed below:
 
   - Epic Expeditions Folder
     - [asgi.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/asgi-ss.png)
@@ -185,7 +185,6 @@ All Python code developed in this project was validated using [PEP8 Online Check
     - [apps.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherapps-ss.png)
     - [urls.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherurls-ss.png)
     - [views.py](https://github.com/legenduzair/epic-expeditions/tree/main/media/testing/weatherviews-ss.png)
-
 
 ## Accessibility Testing
 
