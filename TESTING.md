@@ -138,13 +138,11 @@ The integration testing method via test cases was used when developing code for 
 
 ### HTML Validation
 
-To validate the templates written in HTML for this project, I had copy and paste the code rendered on Google Chrome's Developer Tools. This is because Django templates contain Jinja syntax in them which means it is not possible to directly copy the code from the templates. The following screenshots are of HTML templates validated via [Nu HTML Checker](https://validator.w3.org/nu/), which contained any errors/warnings. The rest of the HTML templates passed validation without any issues.
+To validate the templates written in HTML for this project, I had to copy the code rendered on Google Chrome's page source option and paste it into the validator. This is because Django templates contain Jinja syntax in them which means it is not possible to directly copy the code from the templates. Any following screenshots are of HTML templates validated via [Nu HTML Checker](https://validator.w3.org/nu/), which contained any errors/warnings.
 
-![Home Page HTML Check](/media/testing/homehtml-check.png)
+![All Pages HTML Check](/media/testing/htmlcheck-ss.png)
 
-The home page template does not contain any errors within the actual code but produced four warnings. These warnings are related to the type attribute located in the four script tags being optional.
-
-
+After running the HTML code of all templates of this project, there were no errors found within the actual code. However the validator presented with four warnings. These warnings are related to the type attribute located in the four script tags which are optional to include.
 
 ## Accessibility Testing
 
