@@ -144,6 +144,20 @@ To validate the templates written in HTML for this project, I had to copy the co
 
 After running the HTML code of all templates of this project, there were no errors found within the actual code. However the validator presented with four warnings. These warnings are related to the type attribute located in the four script tags which are optional to include.
 
+### CSS Validation
+
+My custom CSS stylesheet was validated using [The W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). The report returned with no errors. The warnings found are related to custom vendor prefixes. 
+
+![CSS Validator Check](/media/testing/csscheck-ss.png)
+
+### JavaScript Validation
+
+Both custom JavaScript files were validated using [JS Hint](https://jshint.com/). Both reports returned with no errors. 
+
+![JS Hint check one](/media/testing/jscheckone-ss.png)
+
+![JS Hint check two](/media/testing/jschecktwo-ss.png)
+
 ## Accessibility Testing
 
 ### Lighthouse Evaluation
