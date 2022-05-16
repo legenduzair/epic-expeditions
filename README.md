@@ -297,7 +297,7 @@ The follow programming languages & frameworks were used in the development of th
  - Python 
    - The following python packages were installed and used for this project:
 
-   ![Installed Python Packages](/media/screenshots/requirementstxt-ss.png)
+   ![Installed Python Packages](/media/readme/requirementstxt-ss.png)
 
  - Django
    - Django was used as the primary Python framework for this project.
