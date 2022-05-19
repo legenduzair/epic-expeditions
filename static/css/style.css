@@ -61,9 +61,21 @@ nav, footer {
     background-color: rgba(67, 58, 63, 0.6);
 }
 
+@media (max-width: 982px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 901px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 576px) {
     .jumbotron {
-        margin-left: 20px;
+        margin: auto;
     }
 }
 
@@ -113,6 +125,10 @@ nav, footer {
         object-fit: cover;
         border-radius: 10px;
     }
+    .review-content {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -135,7 +151,7 @@ nav, footer {
     color: #5FBFF9;
 }
 
-.star_rating {
+.star-rating {
     margin: 0 auto;
     width: fit-content;
 }
@@ -197,6 +213,15 @@ nav, footer {
     color: #FFFAFA;
     max-width: 80%;
     margin: auto;
+}
+
+@media (max-width: 340px) {
+    
+    .star-section,
+    .star-section h5 {
+        font-size: 0.9rem;
+    }
+    
 }
 
 /* Register and Login Pages - Styles & Media Queries */
@@ -396,6 +421,11 @@ nav, footer {
 
     .temp-details>p>span {
         font-size: 0.8rem !important;
+    }
+
+    .weather-card h4,
+    .weather-card h6 {
+        font-size: 0.78rem !important;
     }
 }
 
