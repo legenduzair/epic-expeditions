@@ -12,8 +12,7 @@
                     <hr>
                     <h4><span class="font-weight-bold">Title:</span> {{ expedition.title }}</h4>
                     <div class="review-border">
-                        <p><span class="font-weight-bold">Review Preview:</span> {{ expedition.excerpt }}</p>
-                        <p><span class="font-weight-bold">Review Content:</span> {{ expedition.content }}</p>
+                        <p><span class="font-weight-bold text-truncate">Review Excerpt:</span> {{ expedition.excerpt }}</p>
                     </div>
                     <div class="m-2">
                         <img src="{{ expedition.travel_image.url }}" alt="" class="card-img-top-3 image-detail rounded-2">
