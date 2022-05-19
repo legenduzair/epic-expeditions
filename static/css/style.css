@@ -221,7 +221,7 @@ nav, footer {
     .star-section h5 {
         font-size: 0.9rem;
     }
-    
+
 }
 
 /* Register and Login Pages - Styles & Media Queries */
@@ -448,7 +448,6 @@ nav, footer {
 
 .review-border {
     border: 2px solid #433A3F;
-    width: max-content;
     margin: auto;
     padding: 20px;
 }
