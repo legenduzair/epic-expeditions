@@ -188,7 +188,10 @@ All Python code developed in this project was validated using [PEP8 Online Check
 
 ## Accessibility Testing
 
+All accessibility testing for this project was carried out using Lighthouse, WAVE (Web Accessibility Evaluation Tool) and WCAG Contrast Checker. On all three accesbility evaluation tools, the same problems were returned. These issues were linked to the button text not having enough contrast with the background of the button, which applied to all of the buttons throughout the website. This was solved by editing the text colour of the buttons. All accessbility testing screenshots are documented below.
+
 ### Lighthouse Evaluation
+
 
 ### WAVE Evaluation
 

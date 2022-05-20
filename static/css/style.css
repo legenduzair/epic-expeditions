@@ -19,8 +19,12 @@ p {
 }
 
 .btn {
-    background-color: #433A3F;
-    
+    background-color: #433A3F;   
+}
+
+.btn-info {
+    color: #433A3F;
+    font-weight: bold;
 }
 
 section {
