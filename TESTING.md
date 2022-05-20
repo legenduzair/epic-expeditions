@@ -202,6 +202,13 @@ As the project was tested using Lighthouse after deployment on Heroku, the perfo
 
 #### Expedition Review List - Desktop
 
+This HTML template had an issue with contrast of the review card content. To resolve this, I increased the font size and darkened the color of the text on the review card.
+
+![Review List Page Lighthouse Score - Desktop](/media/testing/lighthouse/reviewlist-lhouse.png)
+
+#### Expedition Review List - Mobile
+![Review List Page Lighthouse Score - Mobile](/media/testing/lighthouse/reviewlist-lhouse-mobile.png)
+
 
 ### WAVE Evaluation
 
