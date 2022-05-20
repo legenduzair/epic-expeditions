@@ -22,7 +22,9 @@ p {
     background-color: #433A3F;   
 }
 
-.btn-info {
+.btn-info,
+.btn-warning,
+.btn-danger {
     color: #433A3F;
     font-weight: bold;
 }
@@ -180,7 +182,8 @@ nav, footer {
 
 .btn-submit {
     background-color: #71816D;
-    color: white;
+    color: #433A3F;
+    font-weight: bold;
 }
 
 .btn-like {
