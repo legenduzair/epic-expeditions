@@ -192,6 +192,16 @@ All accessibility testing for this project was carried out using Lighthouse, WAV
 
 ### Lighthouse Evaluation
 
+As the project was tested using Lighthouse after deployment on Heroku, the performance scores are lower than it should be due to the delay of website rendering. On some pages, the performance scores are high as the speed of loading up the deployed website varies. Any reductions in best practices & SEO is due to not having a robot.txt file in my project and having an error linked to cookies.
+
+#### Home Page - Desktop
+![Home Page Lighthouse Score - Desktop](/media/testing/lighthouse/homepage-lhouse.png)
+
+#### Home Page - Mobile
+![Home Page Lighthouse Score - Mobile](/media/testing/lighthouse/homepage-lhouse-mobile.png)
+
+#### Expedition Review List - Desktop
+
 
 ### WAVE Evaluation
 
