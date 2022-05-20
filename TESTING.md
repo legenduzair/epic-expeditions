@@ -276,6 +276,10 @@ On the expedition review list & detail HTML templates, WAVE returned with an acc
 
 ![WAVE Image Alt Issue](/media/testing/wave/image-alt.png)
 
+On the weather page, WAVE returned with an accessibility issue which stated that the form control did not have a corresponding label. As a result, a form label was inserted.
+
+![WAVE Form Label Issue](/media/testing/wave/weather-search.png)
+
 ## Bugs and Fixes
 
 The following section consists of many bugs that were encountered and fixed during the development of this project. 
