@@ -96,7 +96,7 @@ nav, footer {
 /* Expedition Review List & Detail Pages - Styles & Media Queries */
 
 .excerpt {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
 }
 
 .card-img-top {
