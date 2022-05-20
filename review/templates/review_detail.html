@@ -50,7 +50,7 @@
                         {% endif %}
                     </form>
                     {% else %}
-                    <span class="font-weight-bold pr-2"><a href="{% url 'account_login' %}">Sign In</a> to Like this Review!</span>
+                    <span class="font-weight-bold pr-2"><a class="hyperlink" href="{% url 'account_login' %}">Sign In</a> to Like this Review!</span>
                     <span><i class="far fa-heart likes"></i></span>
                     <strong>{{ expedition.no_of_likes }} likes</strong>
                     {% endif %}
@@ -65,7 +65,7 @@
                     {% endwith %}
                     {% else %}
                     {% with comments.count as total_comments %}
-                    <span class="font-weight-bold pr-2"><a href="{% url 'account_login' %}">Sign In</a> to Leave a Comment Below!</span>
+                    <span class="font-weight-bold pr-2"><a class="hyperlink" href="{% url 'account_login' %}">Sign In</a> to Leave a Comment Below!</span>
                     <strong><i class="far fa-comments comments"></i>              
                     {{ total_comments }} comments</strong>
                     {% endwith %}
