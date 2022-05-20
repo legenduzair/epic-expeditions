@@ -224,3 +224,11 @@ The following section consists of many bugs that were encountered and fixed duri
   - Issue: When searching for a city that has a space in between such as 'New York' or 'Cape Town' in the weather app, it would throw a Django error.
   - Cause: This is because the api URL requested cannot contain whitespaces. 
   - Fix: I used the .replace python feature to replace any whitespace in a city's name with '%20'. This is commonly used in URLs that query strings with whitespaces.
+- Bug No 8
+  - Issue: Encountered a script error on Google Chrome's Developer Tools when I was on every HTML page except the 'add_review.html' template. This script error was referencing the target event listener used to implement star ratings. As a result, this affected lighthouse accessbility ratings.
+  - Cause: The script tag that reference the 'script.js' file was loaded in the 'base.html' template.
+  - Fix: I removed the script tag from the 'base.html' template and only added in the 'add_review.html' template.
+- Bug No 9
+  - Issue: When inputting the edit_review view URL directly in the search bar along with an expedition ID, any user could access that review without authentication. 
+  - Cause: The '@login_required' library was not inputted before the edit_review view in 'views.py' file.
+  - Fix: I inserted '@login_required' before the function-based views in 'views.py' file of the reviews app.
