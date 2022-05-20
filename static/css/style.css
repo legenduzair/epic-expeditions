@@ -29,6 +29,12 @@ p {
     font-weight: bold;
 }
 
+.btn-submit {
+    background-color: #71816D;
+    color: #000000;
+    font-weight: bold;
+}
+
 section {
     background-color: rgba(191, 222, 255, 0.7);
 }
@@ -178,12 +184,6 @@ nav, footer {
 .my-btn {
     background-color: inherit !important;
     border: 0 !important;
-}
-
-.btn-submit {
-    background-color: #71816D;
-    color: #000000;
-    font-weight: bold;
 }
 
 .btn-like {
