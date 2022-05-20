@@ -244,6 +244,24 @@ There is a reduced score for the accessibility due to header elements not being 
 #### Delete Review Page - Desktop
 ![Delete Review Page Lighthouse Score - Mobile](/media/testing/lighthouse/deletereview-lhouse-mobile.png)
 
+#### Weather Page - Desktop
+![Weather Page Lighthouse Score - Desktop](/media/testing/lighthouse/weather-lhouse.png)
+
+#### Weather Page - Mobile
+![Weather Page Lighthouse Score - Mobile](/media/testing/lighthouse/weather-lhouse-mobile.png)
+
+#### Register Page - Desktop
+![Register Page Lighthouse Score - Desktop](/media/testing/lighthouse/register-lhouse.png)
+
+#### Register Page - Mobile
+![Register Page Lighthouse Score - Mobile](/media/testing/lighthouse/register-lhouse-mobile.png)
+
+#### Sign In Page - Desktop
+![Sign In Page Lighthouse Score - Desktop](/media/testing/lighthouse/signin-lhouse.png)
+
+#### Sign In Page - Mobile
+![Sign In Page Lighthouse Score - Mobile](/media/testing/lighthouse/signin-lhouse-mobile.png)
+
 ### WAVE Evaluation
 
 ## Bugs and Fixes
