@@ -11,9 +11,8 @@
         <form method="POST" class="col-md">
             {% csrf_token %}
             <div class="input-group">
-                <label for="weather" id="weatherSearch">
-                    <input type="text" aria-labelledby="weatherSearch" id="weather" class="form-control search-btn" name="city" placeholder="Search For a City">
-                </label>
+                <label for="weather" id="weatherSearch">Weather</label>
+                <input type="text" aria-labelledby="weatherSearch" id="weather" class="form-control search-btn" name="city" placeholder="Search For a City">
                 <div class="input-group-btn">
                     <button type="submit" class="btn btn-info">Search</button>
                 </div>
