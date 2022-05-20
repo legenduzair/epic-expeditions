@@ -71,7 +71,7 @@ def add_review(request):
     return render(
         request, 'add_review.html', {'form': form, 'controller': 'Add Review'})
 
-
+@login_required
 def edit_review(request, expedition_id):
     """ A view to edit an expedition review """
 
@@ -96,7 +96,7 @@ def edit_review(request, expedition_id):
         request, 'add_review.html',
         {'form': form, 'controller': 'Edit Review'})
 
-
+@login_required
 def delete_review(request, expedition_id):
     """ A view to delete an expedition review """
 
@@ -112,7 +112,7 @@ def delete_review(request, expedition_id):
     }
     return render(request, 'delete_review.html', context)
 
-
+@login_required
 def post_like(request, expedition_id):
     """ A view to add/remove a like to an expedition review """
 
