@@ -166,7 +166,7 @@ When designing the website, I had carefully chosen two complimentary fonts from 
 All images used for developing the website are acquired from [Unsplash](https://unsplash.com/images/stock/royalty-free) and were uploaded into my code using [Cloudinary](https://cloudinary.com/). Images used to add test expedition reviews were acquired from my file explorer on my personal computer.
 
 ### Icons
-The main logo of the website and two weather icons (humidity and wind speed) were acquired from [Font Awesome](https://fontawesome.com/). The pressure weather icon was acquired from [Flat Icon](https://www.flaticon.com/).
+The main logo of the website and two weather icons (humidity and wind speed) were acquired from [Font Awesome](https://fontawesome.com/). The pressure weather icon was acquired from [Flat Icon](https://www.flaticon.com/). The favicon was acquired from Font Awesome and was converted into a 32x32 PNG file on [Favicon.io](https://favicon.io/).
 
 ## Features
 
