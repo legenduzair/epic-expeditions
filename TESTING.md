@@ -262,6 +262,12 @@ There is a reduced score for the accessibility due to header elements not being 
 #### Sign In Page - Mobile
 ![Sign In Page Lighthouse Score - Mobile](/media/testing/lighthouse/signin-lhouse-mobile.png)
 
+#### Sign Out Page - Desktop
+![Sign Out Page Lighthouse Score - Desktop](/media/testing/lighthouse/signout-lhouse.png)
+
+#### Sign Out Page - Mobile
+![Sign Out Page Lighthouse Score - Mobile](/media/testing/lighthouse/signout-lhouse-mobile.png)
+
 ### WAVE Evaluation
 
 ## Bugs and Fixes
