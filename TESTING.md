@@ -270,6 +270,12 @@ There is a reduced score for the accessibility due to header elements not being 
 
 ### WAVE Evaluation
 
+Experimenting the accessibility of Epic Expeditions using [WAVE](https://wave.webaim.org/) returned with the same issues Lighthouse did, but some problems did only occur on WAVE. These are documented below.
+
+On the expedition review list & detail HTML templates, WAVE returned with an accessibility issue which stated that the images used did not have an alt attribute. As a result, an alt attribute describing the images was inserted.
+
+![WAVE Image Alt Issue](/media/testing/wave/image-alt.png)
+
 ## Bugs and Fixes
 
 The following section consists of many bugs that were encountered and fixed during the development of this project. 
