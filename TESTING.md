@@ -280,6 +280,10 @@ On the weather page, WAVE returned with an accessibility error which stated that
 
 ![WAVE Form Label Issue](/media/testing/wave/weather-search.png)
 
+### WCAG Contrast Checker
+
+Evaluating the contrast using WCAG Contrast Checker returned with the same contrast errors returned from WAVE and Lighthouse testing. However, there was one contrast issue WCAG picked up which was located on the weather HTML template. The issue stated that the text colour of the H1 element (white) on this template had a contrast clash with the background. This is a false positive as WCAG does not check the contrast of foreground content against images but rather against the standard background colours, which in this case was also white. The same applies to the false positive contrast issues that appear with the navbar and footer elements.
+
 ## Bugs and Fixes
 
 The following section consists of many bugs that were encountered and fixed during the development of this project. 
