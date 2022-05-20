@@ -4,9 +4,11 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<!-- Expedition Review Detail Page -->
 <section>
     <div class="container-fluid">
         <div class="row">
+            <!-- Expedition Review Fields -->
             <div class="col-12 col-md-6 col-lg-6 offset-lg-1"> 
                 <h3 class="card-title my-5 text-center font-weight-bold">{{ expedition.title }}</h3>  
                 <div class="my-3">
@@ -32,6 +34,7 @@
                     <a href="{% url 'review_list' %}" class="btn btn-submit">Back to Expeditions</a>
                 </div>
                 <hr>
+                <!-- Likes Count -->
                 <div class="text-center p-2">
                     {% if user.is_authenticated %}
                     <form action="{% url 'review_like' expedition.id %}" method="POST">
@@ -52,6 +55,7 @@
                     <strong>{{ expedition.no_of_likes }} likes</strong>
                     {% endif %}
                 </div>
+                <!-- Comments Count -->
                 <div class="text-center pt-3">
                     {% if user.is_authenticated %}
                     {% with comments.count as total_comments %}
@@ -68,6 +72,7 @@
                     {% endif %}
                 </div>
                 <hr>
+                <!-- Edit & Delete Review Buttons -->
                 {% if user.is_authenticated %}
                     {% if user.id == expedition.author.id %}          
                         <div class="text-center">
@@ -77,6 +82,7 @@
                     {% endif %}
                 {% endif %}                 
             </div>
+            <!-- Expedition Review Content -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="review-content">
                     <h4 class="font-weight-bold">Expedition Review:</h4>
@@ -84,6 +90,7 @@
                 </div>
             </div>
         </div>
+        <!-- Comments Section -->
         <div class="row">
             <div class="col-md-8 card m-3 p-3">
                 <div class="card-body">
@@ -124,6 +131,5 @@
         </div>
     </div>
 </section>
-
 
 {% endblock content %}
