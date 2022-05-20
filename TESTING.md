@@ -200,43 +200,49 @@ As the project was tested using Lighthouse after deployment on Heroku, the perfo
 #### Home Page - Mobile
 ![Home Page Lighthouse Score - Mobile](/media/testing/lighthouse/homepage-lhouse-mobile.png)
 
-#### Expedition Review List - Desktop
+#### Expedition Review List Page - Desktop
 
 This HTML template had an issue with contrast of the review card content. To resolve this, I increased the font size and darkened the colour of the text on the review card.
 
 ![Review List Page Lighthouse Score - Desktop](/media/testing/lighthouse/reviewlist-lhouse.png)
 
-#### Expedition Review List - Mobile
+#### Expedition Review List Page - Mobile
 ![Review List Page Lighthouse Score - Mobile](/media/testing/lighthouse/reviewlist-lhouse-mobile.png)
 
 #### Unauthenticated
-#### Expedition Review Detail - Desktop
+#### Expedition Review Detail Page- Desktop
 
 This HTML template had an issue with colour contrast of the sign in hyperlinks. To resolve this, I darkened the colour of the hyperlinks.
 
 ![Review Detail Page Lighthouse Score - Desktop](/media/testing/lighthouse/reviewdetail-lhouse.png)
 
-#### Expedition Review Detail - Mobile
+#### Expedition Review Detail Page - Mobile
 ![Review Detail Page Lighthouse Score - Mobile](/media/testing/lighthouse/reviewdetail-lhouse-mobile.png)
 
 #### Authenticated
-#### Expedition Review Detail - Desktop
+#### Expedition Review Detail Page - Desktop
 
 When a user is logged in, the expedition review page has an accessibility issue with the like button. To resolve this, I input aria labels on the button elements.
 
 ![Review Detail Page Lighthouse Score - Desktop(Logged In)](/media/testing/lighthouse/reviewdetailauth-lhouse.png)
 
-#### Expedition Review Detail - Mobile
+#### Expedition Review Detail Page - Mobile
 ![Review Detail Page Lighthouse Score - Mobile(Logged In)](/media/testing/lighthouse/reviewdetailauth-lhouse-mobile.png)
 
-#### Add Review & Edit Review - Desktop
+#### Add Review & Edit Review Page - Desktop
 
 There is a reduced score for the accessibility due to header elements not being in order. I have used the 'h5' element after the 'h3' element in this template as the font size and weight is preferred for the corresponding text.
 
 ![Add Review Page Lighthouse Score - Desktop](/media/testing/lighthouse/addreview-lhouse.png)
 
-#### Add Review & Edit Review - Mobile
+#### Add Review & Edit Review Page - Mobile
 ![Add Review Page Lighthouse Score - Mobile](/media/testing/lighthouse/addreview-lhouse-mobile.png)
+
+#### Delete Review Page - Desktop
+![Delete Review Page Lighthouse Score - Desktop](/media/testing/lighthouse/deletereview-lhouse.png)
+
+#### Delete Review Page - Desktop
+![Delete Review Page Lighthouse Score - Mobile](/media/testing/lighthouse/deletereview-lhouse-mobile.png)
 
 ### WAVE Evaluation
 
