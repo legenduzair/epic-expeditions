@@ -41,11 +41,11 @@
                         {% csrf_token %}
                         {% if liked %}
                         <span class="font-weight-bold pr-2">Unlike this Review!</span>
-                        <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like"><i class="fas fa-heart"></i></button>
+                        <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like" aria-label="like button"><i class="fas fa-heart"></i></button>
                         <strong>{{ expedition.no_of_likes }} likes</strong>
                         {% else %}
                         <span class="font-weight-bold pr-2">Like this Review!</span>
-                        <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like"><i class="far fa-heart"></i></button>
+                        <button type="submit" name="review_id" value="{{ expedition.id }}" class="btn-like" aria-label="like button"><i class="far fa-heart"></i></button>
                         <strong>{{ expedition.no_of_likes }} likes</strong>
                         {% endif %}
                     </form>
