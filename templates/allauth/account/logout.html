@@ -6,10 +6,12 @@
 
 {% block content %}
 
+<!-- Sign Out Page -->
 <section class="signout-image">
   <div class="container signout-container">
     <h1>Sign Out</h1>
     <p class="text-white">Are you sure you want to sign out of your account?</p>
+    <!-- Sign Out Form -->
     <form method="post" action="{% url 'account_logout' %}">
       {% csrf_token %}
       {% if redirect_field_value %}
