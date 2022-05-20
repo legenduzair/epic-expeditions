@@ -219,6 +219,25 @@ This HTML template had an issue with colour contrast of the sign in hyperlinks. 
 #### Expedition Review Detail - Mobile
 ![Review Detail Page Lighthouse Score - Mobile](/media/testing/lighthouse/reviewdetail-lhouse-mobile.png)
 
+#### Authenticated
+#### Expedition Review Detail - Desktop
+
+When a user is logged in, the expedition review page has an accessibility issue with the like button. To resolve this, I input aria labels on the button elements.
+
+![Review Detail Page Lighthouse Score - Desktop(Logged In)](/media/testing/lighthouse/reviewdetailauth-lhouse.png)
+
+#### Expedition Review Detail - Mobile
+![Review Detail Page Lighthouse Score - Mobile(Logged In)](/media/testing/lighthouse/reviewdetailauth-lhouse-mobile.png)
+
+#### Add Review & Edit Review - Desktop
+
+There is a reduced score for the accessibility due to header elements not being in order. I have used the 'h5' element after the 'h3' element in this template as the font size and weight is preferred for the corresponding text.
+
+![Add Review Page Lighthouse Score - Desktop](/media/testing/lighthouse/addreview-lhouse.png)
+
+#### Add Review & Edit Review - Mobile
+![Add Review Page Lighthouse Score - Mobile](/media/testing/lighthouse/addreview-lhouse-mobile.png)
+
 ### WAVE Evaluation
 
 ## Bugs and Fixes
