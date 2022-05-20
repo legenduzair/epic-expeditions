@@ -58,6 +58,10 @@ nav, footer {
     border-color:#433A3F;
 }
 
+.copyright-footer {
+    color: #FFFAFA !important;
+}
+
 /* Home Page - Styles & Media Queries */
 
 .jumbotron-image {
