@@ -209,6 +209,9 @@ This HTML template had an issue with contrast of the review card content. To res
 #### Expedition Review List - Mobile
 ![Review List Page Lighthouse Score - Mobile](/media/testing/lighthouse/reviewlist-lhouse-mobile.png)
 
+#### Unauthenticated
+#### Expedition Review Detail - Desktop
+![Review Detail Page Lighthouse Score - Desktop]()
 
 ### WAVE Evaluation
 
