@@ -523,5 +523,8 @@ When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push 
 
 ## Credits
 
+All references that assisted me in developing Epic Expeditions have been mentioned throughout the README file. However I would like to thank:
+
+  - [Richard Wells](https://github.com/D0nni387) - The coding extraordinaire who is my project mentor. Richard was a huge help when developing this project.
 
     
