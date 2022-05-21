@@ -354,6 +354,171 @@ All other resources are referenced where appropriate.
 
 ## Deployment
 
+Epic Expeditions was deployed via Heroku. The deployed website can be found here - [Epic Expeditions](https://epic-expeditions.herokuapp.com/)
+
+To deploy the website to Heroku, I followed the steps below to initiate it.
+
+### Installing Django & Supporting Libraries
+
+Before intitiating development, I had to install Django and its supporting libraries on Gitpod.
+
+In Gitpod's Terminal:
+  1. Install Django & Gunicorn:
+    - pip3 install 'django<4' gunicorn
+  2. Install database:
+    - pip3 install dj_database_url psycopg2
+  3. Install Cloudinary libraries:
+    - pip3 install dj3-cloudinary-storage
+  4. Create requirements file:
+    - pip3 freeze --local > requirements.txt
+  5. Create project (in this case, epic_expeditions):
+    - django-admin startproject epic_expeditions .
+  6. Create apps (in this case, review):
+    - python3 manage.py startapp review
+    - The weather, home & errors were app were created later on during the development of the project.
+In settings.py:
+  7. Add to installed apps section. 
+In Gitpod's Terminal:
+  8. Migrate changes:
+    - python3 manage.py migrate
+  9. Run the server to test:
+    - python3 manage.py runserver
+  
+### Creating Heroku App
+
+The following steps can only be performed if an account is made on [Heroku](https://id.heroku.com/login).
+
+  1. Create new Heroku app:
+    - From the Heroku dashboard, select "New" and then select "Create New App".
+  2. Name your Heroku app and select the region:
+    - Give the project a unique name (in my case, epic-expeditions).
+    - Select the region (in my case, Europe).
+  3. Add database to the Heroku app:
+    - Navigate to the "Resources" tab and in the add-ons section, search for "Heroku Postgres" and select it.
+    - Select "Hobby Dev - Free" from the "plan name" drop-down menu and click "Submit Order Form."
+  4. Acquire database URL:
+    - Navigate to the "Settings" tab and select "Reveal Config Vars". Copy the "DATABASE_URL" for use in the upcoming steps.
+
+### Attaching the Database
+
+  1. Within the Django app respository, create a new file called "env.py".
+  2. In the "env.py" file, import the os library:
+    - Add "import os"
+  3. Set environment variables:
+    - Add 'os.environ["DATABASE_URL"] = "(Paste the DATABASE_URL key from Heroku"'
+  4. Add in a custom secret key:
+    - Add 'os.environ["SECRET_KEY"] = "(Make up your own key)"'
+In Heroku.com:
+  5. Add secret key to config vars:
+    - Add the secret key that has just been created as SECRET_KEY for the KEY and the secret key value as the VALUE.
+
+### Preparing our environment and settings.py file
+
+  1. At the top of the settings.py file, add the following snippet:
+
+    from pathlib import Path
+    import os
+    import dj_database_url
+    if os.path.isfile('env.py'):  
+      import env
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+  
+  2. Comment out the old Databases section:
+    
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+  
+  3. Add new Databases section:
+
+    DATABASES = {
+      'default':
+    dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
+  
+  4. In the terminal, make migrations migrate all changes:
+    - python3 manage.py makemigrations
+    - python3 manage.py migrate
+  
+### Setup Cloudinary
+  
+The following steps can only be performed if an account is made on [Cloudinary](https://cloudinary.com/).
+
+  1. In Cloudinary, acquire the Cloudinary URL:
+    - From the dashboard, copy the CLOUDINARY_URL
+  In env.py:
+  2. Add the Cloudinary URL to "env.py" file:
+    - os.environ["CLOUDINARY_URL"] = "(Pasted cloudinary URL"
+  In Heroku:
+  3. Add Cloudinary URL to Heroku config vars:
+    - Insert the CLOUDINARY_URL in config vars section as KEY and VALUE.
+  4. Add Disable collect static to config vars:
+    - Add DISABLE_COLLECTSTATIC as the KEY and 1 as the VALUE.
+    - This should be removed before final deployment, otherwise static files will not load.
+  In settings.py:
+  5. Add Cloudinary libraries to installed apps:
+    - Add 'cloudinary_storage' and 'cloudinary' in the INSTALLED_APPS section. The order they are stored is important; 'cloudinary_storage' goes above 'django.contrib.staticfiles'. 'cloudinary' goes below 'django.contrib.staticfiles'.
+  6. Allow Django to use Cloudinary as media & static files storage:
+    - Place the following snippet under "STATIC_URL = '/static/'":
+
+    STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    MEDIA_URL = '/media/'
+    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+  7. Link files to the Templates directory inserting the snippet below (Place under the BASE_DIR line):
+
+    TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+
+  8. Change the templates directory to TEMPLATES_DIR (Place within the TEMPLATES array):
+
+          TEMPLATES = [
+          {
+            …,
+            'DIRS': [TEMPLATES_DIR],
+            …,
+              ],
+            },
+          },
+          ]
+
+  9. Add Heroku Hostname to ALLOWED_HOSTS array:
+    - ALLOWED_HOSTS = ['epic-expeditions.herokuapp.com', 'localhost'] (in my case). 
+
+### Setting Up Media & Static Files
+
+  In Gitpod:
+  1. Create three new folders at top level directory:
+    - These folders are 'media', 'static' and 'templates'.
+  2. Create a PROCFILE at top level directory:
+    - Procfile
+  In Procfile:
+  3. Add this code:
+    - web: gunicorn PROJ_NAME.wsgi
+  4. Save all files.
+  In the terminal:
+  5. Add, Commit and Push:
+    - git add .
+    - git commit -m “Deployment Commit”
+    - git push
+  
+In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors. Heroku will now build the app. Once the build is finished, the live site will be deployed with a Heroku link provided and a success message.
+
+When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push any changes to Heroku as heroku & automatic deploys were down due to a breach in security. As a result, any final development changes I had made were pushed to Heroku using the command line interface on Gitpod. The following steps were performed to achieve this:
+  
+  1. Login Heroku account in the terminal:
+    - Type "heroku login -i"
+    - Enter email address and password.
+  2. After logging into your Heroku account, link your Heroku app to the terminal:
+    - Run the following command: "heroku git:remote -a (your_app_name_here)". In my case, my app name is epic-expeditions.
+  3. After linking the app to the terminal, push any changes manually via the terminal:
+    - Run the following command to push any changes to the deployed Heroku site: "git push heroku main".
+
 ## Credits
 
 
