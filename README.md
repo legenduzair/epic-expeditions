@@ -509,6 +509,8 @@ The following steps can only be performed if an account is made on [Cloudinary](
   
 In Heroku, navigate to the deployment tab and deploy the branch manually - watch the build logs for any errors. Heroku will now build the app. Once the build is finished, the live site will be deployed with a Heroku link provided and a success message.
 
+### Manual Deployment
+
 When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push any changes to Heroku as heroku & automatic deploys were down due to a breach in security. As a result, any final development changes I had made were pushed to Heroku using the command line interface on Gitpod. The following steps were performed to achieve this:
   
   1. Login Heroku account in the terminal:
