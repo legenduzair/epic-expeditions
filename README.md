@@ -521,6 +521,17 @@ When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push 
   3. After linking the app to the terminal, push any changes manually via the terminal:
     - Run the following command to push any changes to the deployed Heroku site: "git push heroku main".
 
+### Local Deployment
+
+If you want to clone this repository to make a copy that runs the project on a local machine, this can be achieved by following the steps below:
+
+  1. Navigate to the respository you want to clone: https://github.com/legenduzair/epic-expeditions
+  2. Select the "Code" button that is next to the green "Gitpod" button. A menu should dropdown.
+  3. On the dropdown menu, select "HTTPS" and copy the URL it provides to the clipboard.
+  4. On the code editor you are using, in the terminal change the directory to the location you want to clone the respository to.
+  5. Run the command "git clone" and paste in the URL you copied from the clipboard earlier.
+  6. Select enter and Git will clone the respository to your local machine.
+
 ## Credits
 
 All references that assisted me in developing Epic Expeditions have been mentioned throughout the README file. However I would like to thank:
