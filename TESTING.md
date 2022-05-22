@@ -14,6 +14,10 @@ Python's own testing framework, Unittest was used to perform automated testing o
 
 ![Reviews App Unittest Results - forms.py](/media/testing/automated/reviewforms-unittest.png)
 
+### Reviews App (urls.py)
+
+![Reviews App Unittest Results - urls.py](/media/testing/automated/reviewurls-unittest.png)
+
 ## Manual Testing
 
 ### User Stories
