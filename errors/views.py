@@ -9,7 +9,7 @@ def page_not_found_view(request, exception):
     return render(request, 'errors/404.html', status=404)
 
 
-def my_custom_error_view(request, exception):
+def my_custom_error_view(request, *args, **argv):
     """ Function to render 500 error page """
     return render(request, 'errors/500.html', status=500)
 
