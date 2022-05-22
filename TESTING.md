@@ -4,6 +4,12 @@ During and after the development of Epic Expeditions, the project went through r
 
 ## Automated Testing
 
+Python's own testing framework, Unittest was used to perform automated testing on the Django apps. The screenshots below showcase the results acquired from the tests conducted.
+
+### Errors App (views.py)
+
+![Errors App Unittest Results](/media/testing/automated/errors-unittest.png)
+
 ## Manual Testing
 
 ### User Stories
