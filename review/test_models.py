@@ -1,3 +1,4 @@
+"""System Module"""
 from django.test import TestCase
 from django.contrib.auth.models import User
 from .models import TravelReview, TravelComments
@@ -19,11 +20,33 @@ class TestModels(TestCase):
             author=user,
             content='Review test',
             excerpt='Excerpt test',
-            published='May 24, 2022',
+            published='2022-05-24',
             ratings='1')
         self.comments = TravelComments.objects.create(
-            post='Marrakesh',
+            post=TravelReview.objects.get(
+                title='Marrakesh',
+                author=user,
+                content='Review test',
+                excerpt='Excerpt test',
+                published='2022-05-24',
+                ratings='1'),
             name=user,
             body='Comments test',
             created_on='May 24, 2022, 13:05 p.m.'
-        )
+            )
+
+
+class TravelReviewTestModel(TestModels):
+    """Testing class to test review model"""
+    def test_review(self):
+        """Test to observe if all objects from
+        TravelReview model are being acquired"""
+        self.assertTrue(self.expedition)
+
+
+class TravelCommentsTestModel(TestModels):
+    """Testing class to test comments model"""
+    def test_comments(self):
+        """Test to observe if all objects from
+        TravelComments model are being acquired"""
+        self.assertTrue(self.comments)
