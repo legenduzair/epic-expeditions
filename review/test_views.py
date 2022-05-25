@@ -21,15 +21,9 @@ class TestViews(TestCase):
             content='Review test',
             excerpt='Excerpt test',
             published='2022-05-24',
-            ratings='1')
+            ratings='1').pk
         self.comments = TravelComments.objects.create(
-            post=TravelReview.objects.get(
-                title='Marrakesh',
-                author=user,
-                content='Review test',
-                excerpt='Excerpt test',
-                published='2022-05-24',
-                ratings='1'),
+            post=TravelReview.objects.get(id=self.expedition),
             name=user,
             body='Comments test',
             created_on='May 24, 2022, 13:05 p.m.'
@@ -41,5 +35,5 @@ class ReviewDetailViewTest(TestViews):
     def test_review_detailhtml_exists(self):
         """Test to observe if review_detail html template exists"""
         response = self.client.get(
-            '/review_detail/' + str(self.expedition.id))
+            '/review_detail/' + str(self.expedition))
         self.assertEqual(response.status_code, 301)
