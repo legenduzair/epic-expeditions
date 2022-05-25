@@ -54,8 +54,13 @@ class AddReviewTest(TestViews):
             'content': 'Content Test',
             'ratings': '2'
         }
-    
+
         response = self.client.post(reverse('add_review'), data=payload)
+        self.assertEqual(response.status_code, 200)
+    
+    def test_addreview_url(self):
+        """Test to observe if add review URL is working"""
+        response = self.client.get('/add_review/')
         self.assertEqual(response.status_code, 200)
 
 
