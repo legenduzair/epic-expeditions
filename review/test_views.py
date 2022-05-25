@@ -1,6 +1,7 @@
 """System Module"""
 from django.test import TestCase
 from django.contrib.auth.models import User
+from django.urls import reverse
 from .models import TravelReview, TravelComments
 
 
@@ -37,3 +38,22 @@ class ReviewDetailViewTest(TestViews):
         response = self.client.get(
             '/review_detail/' + str(self.expedition))
         self.assertEqual(response.status_code, 301)
+
+
+class AddReviewTest(TestViews):
+    """Testing class to see if Add Review form is functional"""
+    def test_addreviewform_valid(self):
+        """Test to observe if add review form is operating
+        and that it redirects to add_review URL"""
+        self.client.login(username='john', password='54321')
+
+        payload = {
+            'title': 'Marrakesh',
+            'travel_image': '',
+            'excerpt': 'Excerpt Test',
+            'content': 'Content Test',
+            'ratings': '2'
+        }
+    
+        response = self.client.post(reverse('add_review'), data=payload)
+        self.assertEqual(response.status_code, 200)
