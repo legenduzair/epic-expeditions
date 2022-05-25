@@ -57,3 +57,21 @@ class AddReviewTest(TestViews):
     
         response = self.client.post(reverse('add_review'), data=payload)
         self.assertEqual(response.status_code, 200)
+
+
+class EditReviewUrlTest(TestViews):
+    """Testing class to see if Edit Review URL is functional"""
+    def test_editreview_url(self):
+        """Test to observe if edit review URL is working"""
+        response = self.client.get(
+            '/edit_review/' + str(self.expedition))
+        self.assertEqual(response.status_code, 301)
+
+
+class DeleteReviewUrlTest(TestViews):
+    """Testing class to see if Delete Review URL is functional"""
+    def test_deletereview_url(self):
+        """Test to observe if delete review URL is working"""
+        response = self.client.get(
+            '/delete_review/' + str(self.expedition))
+        self.assertEqual(response.status_code, 200)
