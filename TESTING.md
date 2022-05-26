@@ -1,6 +1,6 @@
 # <div align="center">Testing</div>
 
-During and after the development of Epic Expeditions, the project went through rigorous testing to ensure a fully functional and responsive website was created. I have documented all the testing techniques used in the following sections.
+During and after the development of Epic Expeditions, the project went through rigorous testing to ensure a fully functional and responsive website was created. I have documented all the testing techniques used in the following sections. If you would like to traverse back to the README file, please click here - [README](https://github.com/legenduzair/epic-expeditions/blob/main/README.md)
 
 ## Automated Testing
 
@@ -358,3 +358,5 @@ The following section consists of many bugs that were encountered and fixed duri
   - Issue: When inputting the edit_review view URL directly in the search bar along with an expedition ID, any user could access that review without authentication. 
   - Cause: The '@login_required' library was not inputted before the edit_review view in 'views.py' file.
   - Fix: I inserted '@login_required' before the function-based views in 'views.py' file of the reviews app.
+
+If you would like to traverse back to the README file, please click here - [README](https://github.com/legenduzair/epic-expeditions/blob/main/README.md)
