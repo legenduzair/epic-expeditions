@@ -4,7 +4,15 @@ During and after the development of Epic Expeditions, the project went through r
 
 ## Automated Testing
 
-Python's own testing framework, Unittest was used to perform automated testing on the Django apps. The screenshots below showcase the results acquired from the tests conducted.
+Python's own testing framework, Unittest was used to perform automated testing on Python files for most of the Django apps. Due to time constraints, 83% of the code has been covered with automated tests as shown below. The screenshots below showcase the results acquired from the tests conducted.
+
+### Coverage Report & Percentages (All tests)
+
+![Coverage Report - All tests](/media/testing/automated/coverage-report.png)
+
+![Coverage Report - Screenshot One](/media/testing/automated/coverage-overview-one.png)
+
+![Coverage Report - Screenshot Two](/media/testing/automated/coverage-overview-two.png)
 
 ### Errors App (views.py)
 
