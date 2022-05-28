@@ -359,4 +359,8 @@ The following section consists of many bugs that were encountered and fixed duri
   - Cause: The '@login_required' library was not inputted before the edit_review view in 'views.py' file.
   - Fix: I inserted '@login_required' before the function-based views in 'views.py' file of the reviews app.
 
+## Unfixed Bugs
+
+There is one unfixed bug that I have come across while testing the website. This issue occurs when a user is on the register form and inputs their email address to sign up. Once the 'sign up' button is clicked, a message container appears which states that a verification email has been sent to the user. This is NOT the case as no email authentication has been setup properly. However, users can still sign in using their email address as well as their username into Epic Expeditions.
+
 If you would like to traverse back to the README file, please click here - [README](https://github.com/legenduzair/epic-expeditions/blob/main/README.md)
