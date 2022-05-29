@@ -532,6 +532,17 @@ If you want to clone this repository to make a copy that runs the project on a l
   5. Run the command "git clone" and paste in the URL you copied from the clipboard earlier.
   6. Select enter and Git will clone the respository to your local machine.
 
+After cloning the repository, it is important to create a virtual environment before installing any python libraries to the project to start working with it. It allows your device and projects to be secure. To do this, please follow the steps below:
+
+  1. After cloning the repository in the terminal, create a virtual environment by running the command: python3 -m venv venv .
+  2. Once complete, add the "venv" file to your ".gitignore" file. Then, run the command venv\Scripts\activate.bat in the terminal to install it. 
+
+After this, you can install all the Python libraries needed to run this project by installing thje "requirements.txt" file.
+
+  1. In the terminal, run the command pip3 install -r requirements.txt to add the Python libraries to this project. I did not need to do this as my project was developed from scratch. This means that I installed the libraries myself and added them to the "requirements.txt" file by running the command pip3 freeze > requirements.txt to generate it.
+
+After this, you can create your own Heroku application, create the environmental variables and update the settings.py file as mentioned [above](https://github.com/legenduzair/epic-expeditions#creating-heroku-app). Finally, run the server in the terminal by entering python3 manage.py runserver .
+
 ## Credits
 
 All references that assisted me in developing Epic Expeditions have been mentioned throughout the README file. However I would like to thank:
