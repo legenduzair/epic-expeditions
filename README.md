@@ -69,7 +69,7 @@ This project was implemented with the purpose of developing a full-stack Django 
   - Build a platform that is user-friendly and is accessible to all.
 
 ### Entity Relationship Diagram
-  - As this project utilises Django which is a MVT(Model, View & Template) framework, a connection to database tabels or 'Models' is required. An entity relationship diagram was created to visually map out the structure of the databases & models. The entity relationship diagram is mapped out below. 
+  - As this project utilises Django which is a MVT(Model, View & Template) framework, a connection to database tables or 'Models' is required. An entity relationship diagram was created to visually map out the structure of the databases & models. The entity relationship diagram is mapped out below. 
 
   #### Reviews App
   | **Reviews Models** | **PK** |
@@ -245,7 +245,7 @@ If the user decides to delete the review, they will be navigated to a webpage th
 ![Delete Review Page](/media/screenshots/deletereview-ss.png)
 
 ### Add a Review
-The Add Review page will be displayed among the navigation links in the header if the user is authenticated and signed in. Clicking on this link will navigate the user to the Add Review page where they will be required to complete the fields in the form. These fields include title of the review, image, exceprt, review content and star ratings (out of 5). Once the form is filled out, the user will be prompted to select the 'Add Review' button where they will be redirected to the expedition reviews list page. The user will see their newly posted review at the top.
+The Add Review page will be displayed among the navigation links in the header if the user is authenticated and signed in. Clicking on this link will navigate the user to the Add Review page where they will be required to complete the fields in the form. These fields include title of the review, image, excerpt, review content and star ratings (out of 5). Once the form is filled out, the user will be prompted to select the 'Add Review' button where they will be redirected to the expedition reviews list page. The user will see their newly posted review at the top.
 
 ![Add Review Page](/media/screenshots/addreview-ss.png)
 
@@ -272,12 +272,12 @@ Epic Expeditions has a mini-weather app which uses [OpenWeatherMap API](https://
 
 ![Weather App](/media/screenshots/weatherapp-ss.png)
 
-After searching for a city, the webpage will gather data from the API and display it on a weather card. The weather card has details such as the city name, country code, local time, temperature in degrees (Celsius), small description of the weather, weather icon, wind speed, humdity and pressure. These weather details are all in real-time.
+After searching for a city, the webpage will gather data from the API and display it on a weather card. The weather card has details such as the city name, country code, local time, temperature in degrees (Celsius), small description of the weather, weather icon, wind speed, humidity and pressure. These weather details are all in real-time.
 
 ![Weather Card](/media/screenshots/weathercard-ss.png)
 
 ## Future Improvements
-There are several improvements to functionality that I would like to implement in the future. Some of these improvements have been gathered from the user stories on GitHub Issues project kanban board. These user stories have not been completed and would be implemented as future enhancement opportunities. These include:
+There are several improvements to functionality that I would like to implement in the future. Some of these improvements have been gathered from the user stories on GitHub Issues project Kanban board. These user stories have not been completed and would be implemented as future enhancement opportunities. These include:
 
   - The ability to recover a user's password if it has been stolen/forgotten/corrupted. This functionality is part of the allauth library which has already been installed in this project but only needs to be setup to make this functional. 
   - The ability for users to search for travel reviews using a search bar implemented in the navigation header. 
@@ -331,10 +331,10 @@ The follow programming languages & frameworks were used in the development of th
 
 The following packages were used during development of my project:
   
-  - Gitpod - IDE used for the development of the project.
+  - GitPod - IDE used for the development of the project.
   - VS Code - IDE used for the development of the project.
   - Git - Used for version control and transferring files from VS Code to the repository.
-  - GitHub - Used to create respository to store files for this project.
+  - GitHub - Used to create repository to store files for this project.
 
 ### Resources
 
@@ -360,9 +360,9 @@ To deploy the website to Heroku, I followed the steps below to initiate it.
 
 ### Installing Django & Supporting Libraries
 
-Before intitiating development, I had to install Django and its supporting libraries on Gitpod.
+Before initiating development, I had to install Django and its supporting libraries on GitPod.
 
-In Gitpod's Terminal:
+In GitPod's Terminal:
   1. Install Django & Gunicorn:
     - pip3 install 'django<4' gunicorn
   2. Install database:
@@ -401,7 +401,7 @@ The following steps can only be performed if an account is made on [Heroku](http
 
 ### Attaching the Database
 
-  1. Within the Django app respository, create a new file called "env.py".
+  1. Within the Django app repository, create a new file called "env.py".
   2. In the "env.py" file, import the os library:
     - Add "import os"
   3. Set environment variables:
@@ -492,7 +492,7 @@ The following steps can only be performed if an account is made on [Cloudinary](
 
 ### Setting Up Media & Static Files
 
-  In Gitpod:
+  In GitPod:
   1. Create three new folders at top level directory:
     - These folders are 'media', 'static' and 'templates'.
   2. Create a PROCFILE at top level directory:
@@ -511,7 +511,7 @@ In Heroku, navigate to the deployment tab and deploy the branch manually - watch
 
 ### Manual Deployment
 
-When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push any changes to Heroku as heroku & automatic deploys were down due to a breach in security. As a result, any final development changes I had made were pushed to Heroku using the command line interface on Gitpod. The following steps were performed to achieve this:
+When deploying Epic Expeditions, I was advised to use GitPod's terminal to push any changes to Heroku as Heroku & automatic deploys were down due to a breach in security. As a result, any final development changes I had made were pushed to Heroku using the command line interface on GitPod. The following steps were performed to achieve this:
   
   1. Login Heroku account in the terminal:
     - Type "heroku login -i"
@@ -525,21 +525,21 @@ When deploying Epic Expeditions, I was advised to use Gitpod's terminal to push 
 
 If you want to clone this repository to make a copy that runs the project on a local machine, this can be achieved by following the steps below:
 
-  1. Navigate to the respository you want to clone: https://github.com/legenduzair/epic-expeditions
-  2. Select the "Code" button that is next to the green "Gitpod" button. A menu should dropdown.
+  1. Navigate to the repository you want to clone: https://github.com/legenduzair/epic-expeditions
+  2. Select the "Code" button that is next to the green "GitPod" button. A menu should dropdown.
   3. On the dropdown menu, select "HTTPS" and copy the URL it provides to the clipboard.
   4. On the code editor you are using, in the terminal change the directory to the location you want to clone the respository to.
   5. Run the command "git clone" and paste in the URL you copied from the clipboard earlier.
-  6. Select enter and Git will clone the respository to your local machine.
+  6. Select enter and Git will clone the repository to your local machine.
 
 After cloning the repository, it is important to create a virtual environment before installing any python libraries to the project to start working with it. It allows your device and projects to be secure. To do this, please follow the steps below:
 
-  1. After cloning the repository in the terminal, create a virtual environment by running the command: python3 -m venv venv .
-  2. Once complete, add the "venv" file to your ".gitignore" file. Then, run the command venv\Scripts\activate.bat in the terminal to install it. 
+  1. After cloning the repository in the terminal, create a virtual environment by running the command: "python3 -m venv venv" .
+  2. Once complete, add the "venv" file to your ".gitignore" file. Then, run the command "venv\Scripts\activate.bat" in the terminal to install it. 
 
-After this, you can install all the Python libraries needed to run this project by installing thje "requirements.txt" file.
+After this, you can install all the Python libraries needed to run this project by installing the "requirements.txt" file.
 
-  1. In the terminal, run the command pip3 install -r requirements.txt to add the Python libraries to this project. I did not need to do this as my project was developed from scratch. This means that I installed the libraries myself and added them to the "requirements.txt" file by running the command pip3 freeze > requirements.txt to generate it.
+  1. In the terminal, run the command pip3 install -r requirements.txt to add the Python libraries to this project. I did not need to do this as my project was developed from scratch. This means that I installed the libraries myself and added them to the "requirements.txt" file by running the command "pip3 freeze > requirements.txt" to generate it.
 
 After this, you can create your own Heroku application, create the environmental variables and update the settings.py file as mentioned [above](https://github.com/legenduzair/epic-expeditions#creating-heroku-app). Finally, run the server in the terminal by entering python3 manage.py runserver .
 
